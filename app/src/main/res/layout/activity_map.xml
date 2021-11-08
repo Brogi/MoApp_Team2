@@ -25,7 +25,7 @@
                     android:layout_marginStart="196dp"
                     android:layout_marginTop="248dp"
                     android:clickable="true"
-                    android:src="@drawable/asan"
+                    android:src="@drawable/c_asan"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
                     app:tint="#FF0000" />
@@ -37,7 +37,7 @@
                     android:layout_marginStart="280dp"
                     android:layout_marginTop="305dp"
                     android:clickable="true"
-                    android:src="@drawable/boeun"
+                    android:src="@drawable/c_boeun"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
                     app:tint="#ff0000" />
@@ -49,7 +49,7 @@
                     android:layout_marginStart="147dp"
                     android:layout_marginTop="308dp"
                     android:clickable="true"
-                    android:src="@drawable/boryeong"
+                    android:src="@drawable/c_boryeong"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
                     app:tint="#ff0000" />
@@ -61,7 +61,7 @@
                     android:layout_marginStart="171dp"
                     android:layout_marginTop="333dp"
                     android:clickable="true"
-                    android:src="@drawable/buyeo"
+                    android:src="@drawable/c_buyeo"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
                     app:tint="#ff0000" />
@@ -73,7 +73,7 @@
                     android:layout_marginStart="216dp"
                     android:layout_marginTop="244dp"
                     android:clickable="true"
-                    android:src="@drawable/cheonan"
+                    android:src="@drawable/c_cheonan"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
                     app:tint="#ff0000" />
@@ -85,7 +85,7 @@
                     android:layout_marginStart="248dp"
                     android:layout_marginTop="276dp"
                     android:clickable="true"
-                    android:src="@drawable/cheongju"
+                    android:src="@drawable/c_cheongju"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
                     app:tint="#ff0000" />
@@ -97,7 +97,7 @@
                     android:layout_marginStart="170dp"
                     android:layout_marginTop="307dp"
                     android:clickable="true"
-                    android:src="@drawable/cheongyang"
+                    android:src="@drawable/c_cheongyang"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
                     app:tint="#ff0000" />
@@ -109,7 +109,7 @@
                     android:layout_marginStart="299dp"
                     android:layout_marginTop="220dp"
                     android:clickable="true"
-                    android:src="@drawable/chungju"
+                    android:src="@drawable/c_chungju"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
                     app:tint="#ff0000" />
@@ -121,7 +121,7 @@
                     android:layout_marginStart="244dp"
                     android:layout_marginTop="321dp"
                     android:clickable="true"
-                    android:src="@drawable/daejeon"
+                    android:src="@drawable/c_daejeon"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
                     app:tint="#ff0000" />
@@ -133,7 +133,7 @@
                     android:layout_marginStart="152dp"
                     android:layout_marginTop="225dp"
                     android:clickable="true"
-                    android:src="@drawable/dangjin"
+                    android:src="@drawable/c_dangjin"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
                     app:tint="#ff0000" />
@@ -145,7 +145,7 @@
                     android:layout_marginStart="371dp"
                     android:layout_marginTop="227dp"
                     android:clickable="true"
-                    android:src="@drawable/danyang"
+                    android:src="@drawable/c_danyang"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
                     app:tint="#ff0000" />
@@ -157,7 +157,7 @@
                     android:layout_marginStart="274dp"
                     android:layout_marginTop="224dp"
                     android:clickable="true"
-                    android:src="@drawable/eumseong"
+                    android:src="@drawable/c_eumseong"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
                     app:tint="#ff0000" />
@@ -169,7 +169,7 @@
                     android:layout_marginStart="248dp"
                     android:layout_marginTop="356dp"
                     android:clickable="true"
-                    android:src="@drawable/geumsan"
+                    android:src="@drawable/c_geumsan"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
                     app:tint="#ff0000" />
@@ -181,7 +181,7 @@
                     android:layout_marginStart="290dp"
                     android:layout_marginTop="256dp"
                     android:clickable="true"
-                    android:src="@drawable/goesan"
+                    android:src="@drawable/c_goesan"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
                     app:tint="#ff0000" />
@@ -193,7 +193,7 @@
                     android:layout_marginStart="200dp"
                     android:layout_marginTop="292dp"
                     android:clickable="true"
-                    android:src="@drawable/gongju"
+                    android:src="@drawable/c_gongju"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
                     app:tint="#ff0000" />
@@ -205,7 +205,7 @@
                     android:layout_marginStart="145dp"
                     android:layout_marginTop="284dp"
                     android:clickable="true"
-                    android:src="@drawable/hongseong"
+                    android:src="@drawable/c_hongseong"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
                     app:tint="#ff0000" />
@@ -217,7 +217,7 @@
                     android:layout_marginStart="335dp"
                     android:layout_marginTop="211dp"
                     android:clickable="true"
-                    android:src="@drawable/jecheon"
+                    android:src="@drawable/c_jecheon"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
                     app:tint="#ff0000" />
@@ -229,7 +229,7 @@
                     android:layout_marginStart="252dp"
                     android:layout_marginTop="244dp"
                     android:clickable="true"
-                    android:src="@drawable/jincheon"
+                    android:src="@drawable/c_jincheon"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
                     app:tint="#ff0000" />
@@ -241,7 +241,7 @@
                     android:layout_marginStart="208dp"
                     android:layout_marginTop="342dp"
                     android:clickable="true"
-                    android:src="@drawable/nonsan"
+                    android:src="@drawable/c_nonsan"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
                     app:tint="#ff0000" />
@@ -253,7 +253,7 @@
                     android:layout_marginStart="270dp"
                     android:layout_marginTop="329dp"
                     android:clickable="true"
-                    android:src="@drawable/okcheon"
+                    android:src="@drawable/c_okcheon"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
                     app:tint="#ff0000" />
@@ -265,7 +265,7 @@
                     android:layout_marginStart="233dp"
                     android:layout_marginTop="281dp"
                     android:clickable="true"
-                    android:src="@drawable/sejong"
+                    android:src="@drawable/c_sejong"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
                     app:tint="#ff0000" />
@@ -277,7 +277,7 @@
                     android:layout_marginStart="146dp"
                     android:layout_marginTop="360dp"
                     android:clickable="true"
-                    android:src="@drawable/seocheon"
+                    android:src="@drawable/c_seocheon"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
                     app:tint="#ff0000" />
@@ -289,7 +289,7 @@
                     android:layout_marginStart="134dp"
                     android:layout_marginTop="231dp"
                     android:clickable="true"
-                    android:src="@drawable/seosan"
+                    android:src="@drawable/c_seosan"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
                     app:tint="#ff0000" />
@@ -298,10 +298,10 @@
                     android:id="@+id/taean"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="107dp"
-                    android:layout_marginTop="244dp"
+                    android:layout_marginStart="106dp"
+                    android:layout_marginTop="245dp"
                     android:clickable="true"
-                    android:src="@drawable/taean"
+                    android:src="@drawable/c_taean"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
                     app:tint="#ff0000" />
@@ -313,7 +313,7 @@
                     android:layout_marginStart="128dp"
                     android:layout_marginTop="294dp"
                     android:clickable="true"
-                    android:src="@drawable/taean_below"
+                    android:src="@drawable/c_taean_below"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
                     app:tint="#ff0000" />
@@ -325,7 +325,7 @@
                     android:layout_marginStart="283dp"
                     android:layout_marginTop="353dp"
                     android:clickable="true"
-                    android:src="@drawable/yeongdong"
+                    android:src="@drawable/c_yeongdong"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
                     app:tint="#ff0000" />
@@ -337,7 +337,7 @@
                     android:layout_marginStart="163dp"
                     android:layout_marginTop="266dp"
                     android:clickable="true"
-                    android:src="@drawable/yesan"
+                    android:src="@drawable/c_yesan"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
                     app:tint="#ff0000" />
@@ -349,7 +349,7 @@
                     android:layout_marginStart="236dp"
                     android:layout_marginTop="344dp"
                     android:clickable="true"
-                    android:src="@drawable/gyeryong"
+                    android:src="@drawable/c_gyeryong"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
                     app:tint="#ff0000" />
@@ -361,7 +361,643 @@
                     android:layout_marginStart="284dp"
                     android:layout_marginTop="268dp"
                     android:clickable="true"
-                    android:src="@drawable/jeungpyeong"
+                    android:src="@drawable/c_jeungpyeong"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="#ff0000" />
+
+                <ImageView
+                    android:id="@+id/ansan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="190dp"
+                    android:layout_marginTop="181dp"
+                    android:clickable="true"
+                    android:src="@drawable/s_ansan"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="#ff0000" />
+
+                <ImageView
+                    android:id="@+id/anseong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="230dp"
+                    android:layout_marginTop="217dp"
+                    android:clickable="true"
+                    android:src="@drawable/s_anseong"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="#ff0000" />
+
+                <ImageView
+                    android:id="@+id/anyang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="206dp"
+                    android:layout_marginTop="168dp"
+                    android:clickable="true"
+                    android:src="@drawable/s_anyang"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="#ff0000" />
+
+                <ImageView
+                    android:id="@+id/bucheon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="190dp"
+                    android:layout_marginTop="150dp"
+                    android:clickable="true"
+                    android:src="@drawable/s_bucheon"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="#ff0000" />
+
+                <ImageView
+                    android:id="@+id/daebudo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="161dp"
+                    android:layout_marginTop="186dp"
+                    android:clickable="true"
+                    android:src="@drawable/s_daebudo"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="#ff0000" />
+
+                <ImageView
+                    android:id="@+id/dongducheon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="231dp"
+                    android:layout_marginTop="85dp"
+                    android:clickable="true"
+                    android:src="@drawable/s_dongducheon"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="#ff0000" />
+
+                <ImageView
+                    android:id="@+id/ganghwa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="145dp"
+                    android:layout_marginTop="104dp"
+                    android:clickable="true"
+                    android:src="@drawable/s_ganghwa"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="#ff0000" />
+
+                <ImageView
+                    android:id="@+id/gapyeong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="261dp"
+                    android:layout_marginTop="81dp"
+                    android:clickable="true"
+                    android:src="@drawable/s_gapyeong"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="#ff0000" />
+
+                <ImageView
+                    android:id="@+id/gimpo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="170dp"
+                    android:layout_marginTop="112dp"
+                    android:clickable="true"
+                    android:src="@drawable/s_gimpo"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="#ff0000" />
+
+                <ImageView
+                    android:id="@+id/goyang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="185dp"
+                    android:layout_marginTop="121dp"
+                    android:clickable="true"
+                    android:src="@drawable/s_goyang"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="#ff0000" />
+
+                <ImageView
+                    android:id="@+id/gunpo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="208dp"
+                    android:layout_marginTop="178dp"
+                    android:clickable="true"
+                    android:src="@drawable/s_gunpo"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="#ff0000" />
+
+                <ImageView
+                    android:id="@+id/guri"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="236dp"
+                    android:layout_marginTop="138dp"
+                    android:clickable="true"
+                    android:src="@drawable/s_guri"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="#ff0000" />
+
+                <ImageView
+                    android:id="@+id/gwacheon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="217dp"
+                    android:layout_marginTop="166dp"
+                    android:clickable="true"
+                    android:src="@drawable/s_gwacheon"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="#ff0000" />
+
+                <ImageView
+                    android:id="@+id/gwangju"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="237dp"
+                    android:layout_marginTop="157dp"
+                    android:clickable="true"
+                    android:src="@drawable/s_gwangju"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="#ff0000" />
+
+                <ImageView
+                    android:id="@+id/gwangmyeong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="201dp"
+                    android:layout_marginTop="161dp"
+                    android:clickable="true"
+                    android:src="@drawable/s_gwangmyeong"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="#ff0000" />
+
+                <ImageView
+                    android:id="@+id/gyodongdo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="131dp"
+                    android:layout_marginTop="103dp"
+                    android:clickable="true"
+                    android:src="@drawable/s_gyodongdo"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="#ff0000" />
+
+                <ImageView
+                    android:id="@+id/hanam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="240dp"
+                    android:layout_marginTop="147dp"
+                    android:clickable="true"
+                    android:src="@drawable/s_hanam"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="#ff0000" />
+
+                <ImageView
+                    android:id="@+id/hwaseong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="176dp"
+                    android:layout_marginTop="191dp"
+                    android:clickable="true"
+                    android:src="@drawable/s_hwaseong"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="#ff0000" />
+
+                <ImageView
+                    android:id="@+id/incheon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="174dp"
+                    android:layout_marginTop="136dp"
+                    android:clickable="true"
+                    android:src="@drawable/s_incheon"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="#ff0000" />
+
+                <ImageView
+                    android:id="@+id/namyangju"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="238dp"
+                    android:layout_marginTop="120dp"
+                    android:clickable="true"
+                    android:src="@drawable/s_namyangju"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="#ff0000" />
+
+                <ImageView
+                    android:id="@+id/osan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="216dp"
+                    android:layout_marginTop="204dp"
+                    android:clickable="true"
+                    android:src="@drawable/s_osan"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="#ff0000" />
+
+                <ImageView
+                    android:id="@+id/paju"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="186dp"
+                    android:layout_marginTop="83dp"
+                    android:clickable="true"
+                    android:src="@drawable/s_paju"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="#ff0000" />
+
+                <ImageView
+                    android:id="@+id/pocheon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="240dp"
+                    android:layout_marginTop="57dp"
+                    android:clickable="true"
+                    android:src="@drawable/s_pocheon"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="#ff0000" />
+
+                <ImageView
+                    android:id="@+id/pyeongtaek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="191dp"
+                    android:layout_marginTop="215dp"
+                    android:clickable="true"
+                    android:src="@drawable/s_pyeongtaek"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="#ff0000" />
+
+                <ImageView
+                    android:id="@+id/seongmodo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="138dp"
+                    android:layout_marginTop="114dp"
+                    android:clickable="true"
+                    android:src="@drawable/s_seongmodo"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="#ff0000" />
+
+                <ImageView
+                    android:id="@+id/seongnam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="226dp"
+                    android:layout_marginTop="165dp"
+                    android:clickable="true"
+                    android:src="@drawable/s_seongnam"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="#ff0000" />
+
+                <ImageView
+                    android:id="@+id/seoul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="198dp"
+                    android:layout_marginTop="128dp"
+                    android:clickable="true"
+                    android:src="@drawable/s_seoul"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="#ff0000" />
+
+                <ImageView
+                    android:id="@+id/siheung"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="185dp"
+                    android:layout_marginTop="162dp"
+                    android:clickable="true"
+                    android:src="@drawable/s_siheung"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="#ff0000" />
+
+                <ImageView
+                    android:id="@+id/suwon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="213dp"
+                    android:layout_marginTop="184dp"
+                    android:clickable="true"
+                    android:src="@drawable/s_suwon"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="#ff0000" />
+
+                <ImageView
+                    android:id="@+id/uijeongbu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="227dp"
+                    android:layout_marginTop="118dp"
+                    android:clickable="true"
+                    android:src="@drawable/s_uijeongbu"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="#ff0000" />
+
+                <ImageView
+                    android:id="@+id/uiwang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="212dp"
+                    android:layout_marginTop="172dp"
+                    android:clickable="true"
+                    android:src="@drawable/s_uiwang"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="#ff0000" />
+
+                <ImageView
+                    android:id="@+id/yangju"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="216dp"
+                    android:layout_marginTop="92dp"
+                    android:clickable="true"
+                    android:src="@drawable/s_yangju"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="#ff0000" />
+
+                <ImageView
+                    android:id="@+id/yangpyeong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="264dp"
+                    android:layout_marginTop="139dp"
+                    android:clickable="true"
+                    android:src="@drawable/s_yangpyeong"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="#ff0000" />
+
+                <ImageView
+                    android:id="@+id/yeoju"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="271dp"
+                    android:layout_marginTop="173dp"
+                    android:clickable="true"
+                    android:src="@drawable/s_yeoju"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="#ff0000" />
+
+                <ImageView
+                    android:id="@+id/yeoncheon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="205dp"
+                    android:layout_marginTop="41dp"
+                    android:clickable="true"
+                    android:src="@drawable/s_yeoncheon"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="#ff0000" />
+
+                <ImageView
+                    android:id="@+id/yeongheungdo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="150dp"
+                    android:layout_marginTop="187dp"
+                    android:clickable="true"
+                    android:src="@drawable/s_yeongheungdo"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="#ff0000" />
+
+                <ImageView
+                    android:id="@+id/yeongjongdo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="144dp"
+                    android:layout_marginTop="148dp"
+                    android:clickable="true"
+                    android:src="@drawable/s_yeongjongdo"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="#ff0000" />
+
+                <ImageView
+                    android:id="@+id/yongin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="224dp"
+                    android:layout_marginTop="180dp"
+                    android:clickable="true"
+                    android:src="@drawable/s_yongin"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="#ff0000" />
+
+                <ImageView
+                    android:id="@+id/icheon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="260dp"
+                    android:layout_marginTop="185dp"
+                    android:clickable="true"
+                    android:src="@drawable/s_icheon"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="#ff0000" />
+
+                <ImageView
+                    android:id="@+id/buan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="130dp"
+                    android:layout_marginTop="416dp"
+                    android:clickable="true"
+                    android:src="@drawable/jb_buan"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="#ff0000" />
+
+                <ImageView
+                    android:id="@+id/gimje"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="162dp"
+                    android:layout_marginTop="400dp"
+                    android:clickable="true"
+                    android:src="@drawable/jb_gimje"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="#ff0000" />
+
+                <ImageView
+                    android:id="@+id/gochang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="125dp"
+                    android:layout_marginTop="451dp"
+                    android:clickable="true"
+                    android:src="@drawable/jb_gochang"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="#ff0000" />
+
+                <ImageView
+                    android:id="@+id/gunsan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="146dp"
+                    android:layout_marginTop="380dp"
+                    android:clickable="true"
+                    android:src="@drawable/jb_gunsan"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="#ff0000" />
+
+                <ImageView
+                    android:id="@+id/iksan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="182dp"
+                    android:layout_marginTop="366dp"
+                    android:clickable="true"
+                    android:src="@drawable/jb_iksan"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="#ff0000" />
+
+                <ImageView
+                    android:id="@+id/imsil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="206dp"
+                    android:layout_marginTop="428dp"
+                    android:clickable="true"
+                    android:src="@drawable/jb_imsil"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="#ff0000" />
+
+                <ImageView
+                    android:id="@+id/jangsu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="239dp"
+                    android:layout_marginTop="419dp"
+                    android:clickable="true"
+                    android:src="@drawable/jb_jangsu"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="#ff0000" />
+
+                <ImageView
+                    android:id="@+id/jeongeup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="422dp"
+                    android:clickable="true"
+                    android:src="@drawable/jb_jeongeup"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="#ff0000" />
+
+                <ImageView
+                    android:id="@+id/jinan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="230dp"
+                    android:layout_marginTop="390dp"
+                    android:clickable="true"
+                    android:src="@drawable/jb_jinan"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="#ff0000" />
+
+                <ImageView
+                    android:id="@+id/muju"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="266dp"
+                    android:layout_marginTop="381dp"
+                    android:clickable="true"
+                    android:src="@drawable/jb_muju"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="#ff0000" />
+
+                <ImageView
+                    android:id="@+id/namwon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="213dp"
+                    android:layout_marginTop="456dp"
+                    android:clickable="true"
+                    android:src="@drawable/jb_namwon"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="#ff0000" />
+
+                <ImageView
+                    android:id="@+id/sunchang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="177dp"
+                    android:layout_marginTop="457dp"
+                    android:clickable="true"
+                    android:src="@drawable/jb_sunchang"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="#ff0000" />
+
+                <ImageView
+                    android:id="@+id/wanju"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="203dp"
+                    android:layout_marginTop="375dp"
+                    android:clickable="true"
+                    android:src="@drawable/jb_wanju"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="#ff0000" />
+
+                <ImageView
+                    android:id="@+id/jeonju"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="197dp"
+                    android:layout_marginTop="404dp"
+                    android:clickable="true"
+                    android:src="@drawable/jb_jeonju"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
                     app:tint="#ff0000" />
@@ -376,7 +1012,7 @@
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.0" />
+                    app:layout_constraintVertical_bias="1.0" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </ScrollView>
