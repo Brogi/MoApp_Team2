@@ -28,9 +28,9 @@ class MapActivity : AppCompatActivity() {
             // 전남 및 제주
             R.id.jn_bosung, R.id.jn_changheung, R.id.jn_damyang, R.id.jn_gangjin, R.id.jn_goheung,
             R.id.jn_goksung, R.id.jn_gurye, R.id.jn_gwangju, R.id.jn_gwangyang, R.id.jn_haenam,
-            R.id.jn_hampyeong, R.id.jn_hwasoon, R.id.jn_jangseong, R.id.jn_jindo, R.id.jn_muan,
-            R.id.jn_najoo, R.id.jn_suncheon, R.id.jn_yeongam, R.id.jn_yeongkwang, R.id.jn_yeosu,
-            R.id.jeju,
+            R.id.jn_hampyeong, R.id.jn_hwasoon, R.id.jn_jangseong, R.id.jn_jindo, R.id.jn_mokpo,
+            R.id.jn_muan, R.id.jn_najoo, R.id.jn_suncheon, R.id.jn_yeongam, R.id.jn_yeongkwang,
+            R.id.jn_yeosu, R.id.jeju,
             // 충청도
             R.id.c_asan, R.id.c_boeun, R.id.c_boryeong, R.id.c_buyeo, R.id.c_cheonan,
             R.id.c_cheongju, R.id.c_cheongyang, R.id.c_chungju, R.id.c_daejeon, R.id.c_dangjin,
@@ -55,7 +55,7 @@ class MapActivity : AppCompatActivity() {
             R.id.kn_hapcheon, R.id.kn_jinju, R.id.kn_miryang, R.id.kn_namhae, R.id.kn_sacheon,
             R.id.kn_sancheong, R.id.kn_tongyeong, R.id.kn_uiryeong, R.id.kn_ulsan, R.id.kn_yangsan
         )
-        val mapImage = arrayOfNulls<ImageView>(166) // 수도권 39, 전북 14, 전남 21, 충청도 29, 강원 18, 경북 25, 경남 20
+        val mapImage = arrayOfNulls<ImageView>(167) // 수도권 39, 전북 14, 전남 22, 충청도 29, 강원 18, 경북 25, 경남 20
 
         for (i in mapId.indices) {
             mapImage[i] = findViewById<ImageView>(mapId[i])

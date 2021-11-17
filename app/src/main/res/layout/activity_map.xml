@@ -2631,6 +2631,29 @@
                     app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
+                    android:id="@+id/jn_mokpo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="111dp"
+                    android:layout_marginTop="565dp"
+                    android:clickable="true"
+                    android:src="@drawable/jn_mokpo"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="110dp"
+                    android:layout_marginTop="566dp"
+                    android:text="목포"
+                    android:textColor="@color/black"
+                    android:textSize="6sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <ImageView
                     android:id="@+id/jn_najoo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -3809,6 +3832,7 @@
                     android:id="@+id/entire_map"
                     android:layout_width="588dp"
                     android:layout_height="790dp"
+                    android:src="@drawable/entire_map"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="1.0"
