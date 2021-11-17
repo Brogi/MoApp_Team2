@@ -19,6 +19,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".MapActivity" />
+        <activity android:name=".StoriesActivity"/>
+        <activity android:name=".AddStoryActivity"/>
     </application>
 
 </manifest>
