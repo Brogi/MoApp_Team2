@@ -18,7 +18,7 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:id="@+id/asan"
+                    android:id="@+id/c_asan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -28,10 +28,21 @@
                     android:src="@drawable/c_asan"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#FF0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="205dp"
+                    android:layout_marginTop="260dp"
+                    android:text="아산"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/boeun"
+                    android:id="@+id/c_boeun"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="280dp"
@@ -40,10 +51,21 @@
                     android:src="@drawable/c_boeun"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="293dp"
+                    android:layout_marginTop="316dp"
+                    android:text="보은"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/boryeong"
+                    android:id="@+id/c_boryeong"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="147dp"
@@ -52,10 +74,21 @@
                     android:src="@drawable/c_boryeong"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="153dp"
+                    android:layout_marginTop="330dp"
+                    android:text="보령"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/buyeo"
+                    android:id="@+id/c_buyeo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="171dp"
@@ -64,10 +97,21 @@
                     android:src="@drawable/c_buyeo"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="183dp"
+                    android:layout_marginTop="346dp"
+                    android:text="부여"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/cheonan"
+                    android:id="@+id/c_cheonan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="216dp"
@@ -76,10 +120,21 @@
                     android:src="@drawable/c_cheonan"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="235dp"
+                    android:layout_marginTop="260dp"
+                    android:text="천안"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/cheongju"
+                    android:id="@+id/c_cheongju"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="248dp"
@@ -88,10 +143,21 @@
                     android:src="@drawable/c_cheongju"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="262dp"
+                    android:layout_marginTop="292dp"
+                    android:text="청주"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/cheongyang"
+                    android:id="@+id/c_cheongyang"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="170dp"
@@ -100,10 +166,21 @@
                     android:src="@drawable/c_cheongyang"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginTop="317dp"
+                    android:text="청양"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/chungju"
+                    android:id="@+id/c_chungju"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="299dp"
@@ -112,10 +189,21 @@
                     android:src="@drawable/c_chungju"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="319dp"
+                    android:layout_marginTop="235dp"
+                    android:text="충주"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/daejeon"
+                    android:id="@+id/c_daejeon"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="244dp"
@@ -124,10 +212,21 @@
                     android:src="@drawable/c_daejeon"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="250dp"
+                    android:layout_marginTop="335dp"
+                    android:text="대전"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/dangjin"
+                    android:id="@+id/c_dangjin"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="152dp"
@@ -136,10 +235,21 @@
                     android:src="@drawable/c_dangjin"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="165dp"
+                    android:layout_marginTop="245dp"
+                    android:text="당진"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/danyang"
+                    android:id="@+id/c_danyang"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="371dp"
@@ -148,10 +258,21 @@
                     android:src="@drawable/c_danyang"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="381dp"
+                    android:layout_marginTop="244dp"
+                    android:text="단양"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/eumseong"
+                    android:id="@+id/c_eumseong"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="274dp"
@@ -160,10 +281,21 @@
                     android:src="@drawable/c_eumseong"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="282dp"
+                    android:layout_marginTop="242dp"
+                    android:text="음성"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/geumsan"
+                    android:id="@+id/c_geumsan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="248dp"
@@ -172,10 +304,21 @@
                     android:src="@drawable/c_geumsan"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="258dp"
+                    android:layout_marginTop="370dp"
+                    android:text="금산"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/goesan"
+                    android:id="@+id/c_goesan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="290dp"
@@ -184,10 +327,21 @@
                     android:src="@drawable/c_goesan"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="310dp"
+                    android:layout_marginTop="275dp"
+                    android:text="괴산"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/gongju"
+                    android:id="@+id/c_gongju"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="200dp"
@@ -196,10 +350,21 @@
                     android:src="@drawable/c_gongju"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="218dp"
+                    android:layout_marginTop="315dp"
+                    android:text="공주"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/hongseong"
+                    android:id="@+id/c_hongseong"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="145dp"
@@ -208,10 +373,21 @@
                     android:src="@drawable/c_hongseong"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="156dp"
+                    android:layout_marginTop="294dp"
+                    android:text="홍성"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/jecheon"
+                    android:id="@+id/c_jecheon"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="335dp"
@@ -220,10 +396,21 @@
                     android:src="@drawable/c_jecheon"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="353dp"
+                    android:layout_marginTop="245dp"
+                    android:text="제천"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/jincheon"
+                    android:id="@+id/c_jincheon"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="252dp"
@@ -232,10 +419,21 @@
                     android:src="@drawable/c_jincheon"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="264dp"
+                    android:layout_marginTop="256dp"
+                    android:text="진천"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/nonsan"
+                    android:id="@+id/c_nonsan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="208dp"
@@ -244,10 +442,21 @@
                     android:src="@drawable/c_nonsan"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="220dp"
+                    android:layout_marginTop="359dp"
+                    android:text="논산"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/okcheon"
+                    android:id="@+id/c_okcheon"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="270dp"
@@ -256,10 +465,21 @@
                     android:src="@drawable/c_okcheon"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="280dp"
+                    android:layout_marginTop="340dp"
+                    android:text="옥천"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/sejong"
+                    android:id="@+id/c_sejong"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="233dp"
@@ -268,10 +488,21 @@
                     android:src="@drawable/c_sejong"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="240dp"
+                    android:layout_marginTop="308dp"
+                    android:text="세종"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/seocheon"
+                    android:id="@+id/c_seocheon"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="146dp"
@@ -280,10 +511,21 @@
                     android:src="@drawable/c_seocheon"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginTop="367dp"
+                    android:text="서천"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/seosan"
+                    android:id="@+id/c_seosan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="134dp"
@@ -292,10 +534,21 @@
                     android:src="@drawable/c_seosan"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="142dp"
+                    android:layout_marginTop="265dp"
+                    android:text="서산"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/taean"
+                    android:id="@+id/c_taean"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="106dp"
@@ -304,10 +557,21 @@
                     android:src="@drawable/c_taean"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="112dp"
+                    android:layout_marginTop="259dp"
+                    android:text="태안"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/taean_below"
+                    android:id="@+id/c_taean_below"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="128dp"
@@ -316,10 +580,10 @@
                     android:src="@drawable/c_taean_below"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
 
                 <ImageView
-                    android:id="@+id/yeongdong"
+                    android:id="@+id/c_yeongdong"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="283dp"
@@ -328,10 +592,21 @@
                     android:src="@drawable/c_yeongdong"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="300dp"
+                    android:layout_marginTop="368dp"
+                    android:text="영동"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/yesan"
+                    android:id="@+id/c_yesan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="163dp"
@@ -340,10 +615,21 @@
                     android:src="@drawable/c_yesan"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="183dp"
+                    android:layout_marginTop="280dp"
+                    android:text="예산"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/gyeryong"
+                    android:id="@+id/c_gyeryong"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="236dp"
@@ -352,10 +638,21 @@
                     android:src="@drawable/c_gyeryong"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="232dp"
+                    android:layout_marginTop="346dp"
+                    android:text="계룡"
+                    android:textColor="@color/black"
+                    android:textSize="7sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/jeungpyeong"
+                    android:id="@+id/c_jeungpyeong"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="284dp"
@@ -364,10 +661,21 @@
                     android:src="@drawable/c_jeungpyeong"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="381dp"
+                    android:layout_marginTop="244dp"
+                    android:text="단양"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/ansan"
+                    android:id="@+id/s_ansan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="190dp"
@@ -376,10 +684,21 @@
                     android:src="@drawable/s_ansan"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="203dp"
+                    android:layout_marginTop="184dp"
+                    android:text="안산"
+                    android:textColor="@color/black"
+                    android:textSize="6sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/anseong"
+                    android:id="@+id/s_anseong"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="230dp"
@@ -388,10 +707,21 @@
                     android:src="@drawable/s_anseong"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="245dp"
+                    android:layout_marginTop="230dp"
+                    android:text="안성"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/anyang"
+                    android:id="@+id/s_anyang"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="206dp"
@@ -400,10 +730,21 @@
                     android:src="@drawable/s_anyang"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="209dp"
+                    android:layout_marginTop="170dp"
+                    android:text="안양"
+                    android:textColor="@color/black"
+                    android:textSize="5sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/bucheon"
+                    android:id="@+id/s_bucheon"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="190dp"
@@ -412,10 +753,21 @@
                     android:src="@drawable/s_bucheon"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="194dp"
+                    android:layout_marginTop="155dp"
+                    android:text="부천"
+                    android:textColor="@color/black"
+                    android:textSize="5sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/daebudo"
+                    android:id="@+id/s_daebudo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="161dp"
@@ -424,10 +776,21 @@
                     android:src="@drawable/s_daebudo"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="162dp"
+                    android:layout_marginTop="192dp"
+                    android:text="대부도"
+                    android:textColor="@color/black"
+                    android:textSize="5sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/dongducheon"
+                    android:id="@+id/s_dongducheon"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="231dp"
@@ -436,10 +799,21 @@
                     android:src="@drawable/s_dongducheon"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="234dp"
+                    android:layout_marginTop="95dp"
+                    android:text="동두천"
+                    android:textColor="@color/black"
+                    android:textSize="5sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/ganghwa"
+                    android:id="@+id/s_ganghwa"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="145dp"
@@ -448,10 +822,21 @@
                     android:src="@drawable/s_ganghwa"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="150dp"
+                    android:layout_marginTop="111dp"
+                    android:text="강화"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/gapyeong"
+                    android:id="@+id/s_gapyeong"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="261dp"
@@ -460,10 +845,21 @@
                     android:src="@drawable/s_gapyeong"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="270dp"
+                    android:layout_marginTop="110dp"
+                    android:text="가평"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/gimpo"
+                    android:id="@+id/s_gimpo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="170dp"
@@ -472,10 +868,21 @@
                     android:src="@drawable/s_gimpo"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="171dp"
+                    android:layout_marginTop="124dp"
+                    android:text="김포"
+                    android:textColor="@color/black"
+                    android:textSize="8sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/goyang"
+                    android:id="@+id/s_goyang"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="185dp"
@@ -484,10 +891,21 @@
                     android:src="@drawable/s_goyang"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="197dp"
+                    android:layout_marginTop="126dp"
+                    android:text="고양"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/gunpo"
+                    android:id="@+id/s_gunpo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="208dp"
@@ -496,10 +914,21 @@
                     android:src="@drawable/s_gunpo"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="209dp"
+                    android:layout_marginTop="178dp"
+                    android:text="군포"
+                    android:textColor="@color/black"
+                    android:textSize="5sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/guri"
+                    android:id="@+id/s_guri"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="236dp"
@@ -508,10 +937,21 @@
                     android:src="@drawable/s_guri"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="238dp"
+                    android:layout_marginTop="143dp"
+                    android:text="구리"
+                    android:textColor="@color/black"
+                    android:textSize="5sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/gwacheon"
+                    android:id="@+id/s_gwacheon"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="217dp"
@@ -520,10 +960,21 @@
                     android:src="@drawable/s_gwacheon"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="219dp"
+                    android:layout_marginTop="168dp"
+                    android:text="과천"
+                    android:textColor="@color/black"
+                    android:textSize="5sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/gwangju"
+                    android:id="@+id/s_gwangju"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="237dp"
@@ -532,10 +983,21 @@
                     android:src="@drawable/s_gwangju"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="252dp"
+                    android:layout_marginTop="170dp"
+                    android:text="광주"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/gwangmyeong"
+                    android:id="@+id/s_gwangmyeong"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="201dp"
@@ -544,10 +1006,21 @@
                     android:src="@drawable/s_gwangmyeong"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="201dp"
+                    android:layout_marginTop="165dp"
+                    android:text="광명"
+                    android:textColor="@color/black"
+                    android:textSize="5sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/gyodongdo"
+                    android:id="@+id/s_gyodongdo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="131dp"
@@ -556,10 +1029,10 @@
                     android:src="@drawable/s_gyodongdo"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
 
                 <ImageView
-                    android:id="@+id/hanam"
+                    android:id="@+id/s_hanam"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="240dp"
@@ -568,10 +1041,21 @@
                     android:src="@drawable/s_hanam"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="247dp"
+                    android:layout_marginTop="156dp"
+                    android:text="하남"
+                    android:textColor="@color/black"
+                    android:textSize="5sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/hwaseong"
+                    android:id="@+id/s_hwaseong"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="176dp"
@@ -580,10 +1064,21 @@
                     android:src="@drawable/s_hwaseong"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="198dp"
+                    android:layout_marginTop="205dp"
+                    android:text="화성"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/incheon"
+                    android:id="@+id/s_incheon"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="174dp"
@@ -592,10 +1087,21 @@
                     android:src="@drawable/s_incheon"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="178dp"
+                    android:layout_marginTop="143dp"
+                    android:text="인천"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/namyangju"
+                    android:id="@+id/s_namyangju"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="238dp"
@@ -604,10 +1110,21 @@
                     android:src="@drawable/s_namyangju"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="244dp"
+                    android:layout_marginTop="132dp"
+                    android:text="남양주"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/osan"
+                    android:id="@+id/s_osan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="216dp"
@@ -616,10 +1133,21 @@
                     android:src="@drawable/s_osan"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="221dp"
+                    android:layout_marginTop="209dp"
+                    android:text="오산"
+                    android:textColor="@color/black"
+                    android:textSize="5sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/paju"
+                    android:id="@+id/s_paju"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="186dp"
@@ -628,10 +1156,21 @@
                     android:src="@drawable/s_paju"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="197dp"
+                    android:layout_marginTop="97dp"
+                    android:text="파주"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/pocheon"
+                    android:id="@+id/s_pocheon"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="240dp"
@@ -640,10 +1179,21 @@
                     android:src="@drawable/s_pocheon"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="253dp"
+                    android:layout_marginTop="85dp"
+                    android:text="포천"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/pyeongtaek"
+                    android:id="@+id/s_pyeongtaek"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="191dp"
@@ -652,10 +1202,21 @@
                     android:src="@drawable/s_pyeongtaek"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="208dp"
+                    android:layout_marginTop="231dp"
+                    android:text="평택"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/seongmodo"
+                    android:id="@+id/s_seongmodo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="138dp"
@@ -664,10 +1225,10 @@
                     android:src="@drawable/s_seongmodo"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
 
                 <ImageView
-                    android:id="@+id/seongnam"
+                    android:id="@+id/s_seongnam"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="226dp"
@@ -676,10 +1237,21 @@
                     android:src="@drawable/s_seongnam"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="233dp"
+                    android:layout_marginTop="173dp"
+                    android:text="성남"
+                    android:textColor="@color/black"
+                    android:textSize="5sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/seoul"
+                    android:id="@+id/s_seoul"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="198dp"
@@ -688,10 +1260,21 @@
                     android:src="@drawable/s_seoul"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="214dp"
+                    android:layout_marginTop="147dp"
+                    android:text="서울"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/siheung"
+                    android:id="@+id/s_siheung"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="185dp"
@@ -700,10 +1283,21 @@
                     android:src="@drawable/s_siheung"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="193dp"
+                    android:layout_marginTop="173dp"
+                    android:text="시흥"
+                    android:textColor="@color/black"
+                    android:textSize="5sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/suwon"
+                    android:id="@+id/s_suwon"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="213dp"
@@ -712,10 +1306,21 @@
                     android:src="@drawable/s_suwon"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="219dp"
+                    android:layout_marginTop="192dp"
+                    android:text="수원"
+                    android:textColor="@color/black"
+                    android:textSize="5sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/uijeongbu"
+                    android:id="@+id/s_uijeongbu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="227dp"
@@ -724,10 +1329,21 @@
                     android:src="@drawable/s_uijeongbu"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="228dp"
+                    android:layout_marginTop="122dp"
+                    android:text="의정부"
+                    android:textColor="@color/black"
+                    android:textSize="5sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/uiwang"
+                    android:id="@+id/s_uiwang"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="212dp"
@@ -736,10 +1352,21 @@
                     android:src="@drawable/s_uiwang"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="218dp"
+                    android:layout_marginTop="176dp"
+                    android:text="의왕"
+                    android:textColor="@color/black"
+                    android:textSize="5sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/yangju"
+                    android:id="@+id/s_yangju"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="216dp"
@@ -748,10 +1375,21 @@
                     android:src="@drawable/s_yangju"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="222dp"
+                    android:layout_marginTop="105dp"
+                    android:text="양주"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/yangpyeong"
+                    android:id="@+id/s_yangpyeong"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="264dp"
@@ -760,10 +1398,21 @@
                     android:src="@drawable/s_yangpyeong"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="285dp"
+                    android:layout_marginTop="160dp"
+                    android:text="양평"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/yeoju"
+                    android:id="@+id/s_yeoju"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="271dp"
@@ -772,10 +1421,21 @@
                     android:src="@drawable/s_yeoju"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="293dp"
+                    android:layout_marginTop="193dp"
+                    android:text="여주"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/yeoncheon"
+                    android:id="@+id/s_yeoncheon"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="205dp"
@@ -784,10 +1444,21 @@
                     android:src="@drawable/s_yeoncheon"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="223dp"
+                    android:layout_marginTop="65dp"
+                    android:text="연천"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/yeongheungdo"
+                    android:id="@+id/s_yeongheungdo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="150dp"
@@ -796,10 +1467,21 @@
                     android:src="@drawable/s_yeongheungdo"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="150dp"
+                    android:layout_marginTop="187dp"
+                    android:text="영흥도"
+                    android:textColor="@color/black"
+                    android:textSize="5sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/yeongjongdo"
+                    android:id="@+id/s_yeongjongdo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="144dp"
@@ -808,10 +1490,21 @@
                     android:src="@drawable/s_yeongjongdo"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="148dp"
+                    android:layout_marginTop="155dp"
+                    android:text="영종도"
+                    android:textColor="@color/black"
+                    android:textSize="6sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/yongin"
+                    android:id="@+id/s_yongin"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="224dp"
@@ -820,10 +1513,21 @@
                     android:src="@drawable/s_yongin"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="240dp"
+                    android:layout_marginTop="200dp"
+                    android:text="용인"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/icheon"
+                    android:id="@+id/s_icheon"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="260dp"
@@ -832,10 +1536,21 @@
                     android:src="@drawable/s_icheon"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="265dp"
+                    android:layout_marginTop="196dp"
+                    android:text="이천"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/buan"
+                    android:id="@+id/jb_buan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="130dp"
@@ -844,10 +1559,21 @@
                     android:src="@drawable/jb_buan"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="148dp"
+                    android:layout_marginTop="432dp"
+                    android:text="부안"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/gimje"
+                    android:id="@+id/jb_gimje"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="162dp"
@@ -856,10 +1582,21 @@
                     android:src="@drawable/jb_gimje"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginTop="415dp"
+                    android:text="김제"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/gochang"
+                    android:id="@+id/jb_gochang"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="125dp"
@@ -868,10 +1605,21 @@
                     android:src="@drawable/jb_gochang"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="140dp"
+                    android:layout_marginTop="468dp"
+                    android:text="고창"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/gunsan"
+                    android:id="@+id/jb_gunsan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="146dp"
@@ -880,10 +1628,21 @@
                     android:src="@drawable/jb_gunsan"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="162dp"
+                    android:layout_marginTop="391dp"
+                    android:text="군산"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/iksan"
+                    android:id="@+id/jb_iksan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="182dp"
@@ -892,10 +1651,21 @@
                     android:src="@drawable/jb_iksan"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="196dp"
+                    android:layout_marginTop="385dp"
+                    android:text="익산"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/imsil"
+                    android:id="@+id/jb_imsil"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="206dp"
@@ -904,10 +1674,21 @@
                     android:src="@drawable/jb_imsil"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="220dp"
+                    android:layout_marginTop="450dp"
+                    android:text="임실"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/jangsu"
+                    android:id="@+id/jb_jangsu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="239dp"
@@ -916,10 +1697,21 @@
                     android:src="@drawable/jb_jangsu"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="261dp"
+                    android:layout_marginTop="440dp"
+                    android:text="장수"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/jeongeup"
+                    android:id="@+id/jb_jeongeup"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="160dp"
@@ -928,10 +1720,21 @@
                     android:src="@drawable/jb_jeongeup"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginTop="445dp"
+                    android:text="정읍"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/jinan"
+                    android:id="@+id/jb_jinan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="230dp"
@@ -940,10 +1743,21 @@
                     android:src="@drawable/jb_jinan"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="250dp"
+                    android:layout_marginTop="410dp"
+                    android:text="진안"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/muju"
+                    android:id="@+id/jb_muju"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="266dp"
@@ -952,10 +1766,21 @@
                     android:src="@drawable/jb_muju"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="285dp"
+                    android:layout_marginTop="402dp"
+                    android:text="무주"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/namwon"
+                    android:id="@+id/jb_namwon"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="213dp"
@@ -964,10 +1789,21 @@
                     android:src="@drawable/jb_namwon"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="240dp"
+                    android:layout_marginTop="477dp"
+                    android:text="남원"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/sunchang"
+                    android:id="@+id/jb_sunchang"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="177dp"
@@ -976,10 +1812,21 @@
                     android:src="@drawable/jb_sunchang"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="205dp"
+                    android:layout_marginTop="480dp"
+                    android:text="순창"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/wanju"
+                    android:id="@+id/jb_wanju"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="203dp"
@@ -988,10 +1835,21 @@
                     android:src="@drawable/jb_wanju"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="225dp"
+                    android:layout_marginTop="393dp"
+                    android:text="완주"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
-                    android:id="@+id/jeonju"
+                    android:id="@+id/jb_jeonju"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="197dp"
@@ -1000,7 +1858,1401 @@
                     android:src="@drawable/jb_jeonju"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map"
-                    app:tint="#ff0000" />
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="210dp"
+                    android:layout_marginTop="417dp"
+                    android:text="전주"
+                    android:textColor="@color/black"
+                    android:textSize="8sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <ImageView
+                    android:id="@+id/kw_cheolwon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="246dp"
+                    android:layout_marginTop="34dp"
+                    android:clickable="true"
+                    android:src="@drawable/kw_cheolwon"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="272dp"
+                    android:layout_marginTop="45dp"
+                    android:text="철원"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <ImageView
+                    android:id="@+id/kw_chuncheon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="291dp"
+                    android:layout_marginTop="76dp"
+                    android:clickable="true"
+                    android:src="@drawable/kw_chuncheon"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="315dp"
+                    android:layout_marginTop="100dp"
+                    android:text="춘천"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <ImageView
+                    android:id="@+id/kw_donghae"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="466dp"
+                    android:layout_marginTop="164dp"
+                    android:clickable="true"
+                    android:src="@drawable/kw_donghae"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="472dp"
+                    android:layout_marginTop="175dp"
+                    android:text="동해"
+                    android:textColor="@color/black"
+                    android:textSize="8sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <ImageView
+                    android:id="@+id/kw_gangneung"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="424dp"
+                    android:layout_marginTop="115dp"
+                    android:clickable="true"
+                    android:src="@drawable/kw_gangneung"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="450dp"
+                    android:layout_marginTop="140dp"
+                    android:text="강릉"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <ImageView
+                    android:id="@+id/kw_hoengseong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="319dp"
+                    android:layout_marginTop="143dp"
+                    android:clickable="true"
+                    android:src="@drawable/kw_hoengseong"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="350dp"
+                    android:layout_marginTop="160dp"
+                    android:text="횡성"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <ImageView
+                    android:id="@+id/kw_hongcheon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="294dp"
+                    android:layout_marginTop="102dp"
+                    android:clickable="true"
+                    android:src="@drawable/kw_hongcheon"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="350dp"
+                    android:layout_marginTop="125dp"
+                    android:text="홍천"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <ImageView
+                    android:id="@+id/kw_hwacheon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="288dp"
+                    android:layout_marginTop="44dp"
+                    android:clickable="true"
+                    android:src="@drawable/kw_hwacheon"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="310dp"
+                    android:layout_marginTop="60dp"
+                    android:text="화천"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <ImageView
+                    android:id="@+id/kw_injae"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="351dp"
+                    android:layout_marginTop="36dp"
+                    android:clickable="true"
+                    android:src="@drawable/kw_injae"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="380dp"
+                    android:layout_marginTop="80dp"
+                    android:text="인제"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <ImageView
+                    android:id="@+id/kw_jeongseon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="408dp"
+                    android:layout_marginTop="162dp"
+                    android:clickable="true"
+                    android:src="@drawable/kw_jeongseon"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="425dp"
+                    android:layout_marginTop="190dp"
+                    android:text="정선"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <ImageView
+                    android:id="@+id/kw_koseong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="385dp"
+                    android:layout_marginTop="0dp"
+                    android:clickable="true"
+                    android:src="@drawable/kw_koseong"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="398dp"
+                    android:layout_marginTop="35dp"
+                    android:text="고성"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <ImageView
+                    android:id="@+id/kw_pyeongchang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="378dp"
+                    android:layout_marginTop="125dp"
+                    android:clickable="true"
+                    android:src="@drawable/kw_pyeongchang"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="395dp"
+                    android:layout_marginTop="160dp"
+                    android:text="평창"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <ImageView
+                    android:id="@+id/kw_samcheok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="451dp"
+                    android:layout_marginTop="184dp"
+                    android:clickable="true"
+                    android:src="@drawable/kw_samcheok"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="480dp"
+                    android:layout_marginTop="210dp"
+                    android:text="삼척"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <ImageView
+                    android:id="@+id/kw_sokcho"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="408dp"
+                    android:layout_marginTop="64dp"
+                    android:clickable="true"
+                    android:src="@drawable/kw_sokcho"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="416dp"
+                    android:layout_marginTop="67dp"
+                    android:text="속초"
+                    android:textColor="@color/black"
+                    android:textSize="6sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <ImageView
+                    android:id="@+id/kw_taebaek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="452dp"
+                    android:layout_marginTop="203dp"
+                    android:clickable="true"
+                    android:src="@drawable/kw_taebaek"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="458dp"
+                    android:layout_marginTop="230dp"
+                    android:text="태백"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <ImageView
+                    android:id="@+id/kw_wonjoo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="313dp"
+                    android:layout_marginTop="170dp"
+                    android:clickable="true"
+                    android:src="@drawable/kw_wonjoo"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="327dp"
+                    android:layout_marginTop="191dp"
+                    android:text="원주"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <ImageView
+                    android:id="@+id/kw_yanggu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="337dp"
+                    android:layout_marginTop="40dp"
+                    android:clickable="true"
+                    android:src="@drawable/kw_yanggu"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="347dp"
+                    android:layout_marginTop="60dp"
+                    android:text="양구"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <ImageView
+                    android:id="@+id/kw_yangyang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="405dp"
+                    android:layout_marginTop="73dp"
+                    android:clickable="true"
+                    android:src="@drawable/kw_yangyang"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="420dp"
+                    android:layout_marginTop="90dp"
+                    android:text="양양"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <ImageView
+                    android:id="@+id/kw_yeongwol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="360dp"
+                    android:layout_marginTop="186dp"
+                    android:clickable="true"
+                    android:src="@drawable/kw_yeongwol"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="394dp"
+                    android:layout_marginTop="213dp"
+                    android:text="영월"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <ImageView
+                    android:id="@+id/jn_bosung"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="182dp"
+                    android:layout_marginTop="551dp"
+                    android:clickable="true"
+                    android:src="@drawable/jn_bosung"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:layout_marginTop="568dp"
+                    android:text="보성"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <ImageView
+                    android:id="@+id/jn_changheung"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="162dp"
+                    android:layout_marginTop="564dp"
+                    android:clickable="true"
+                    android:src="@drawable/jn_changheung"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="169dp"
+                    android:layout_marginTop="580dp"
+                    android:text="장흥"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <ImageView
+                    android:id="@+id/jn_damyang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="176dp"
+                    android:layout_marginTop="476dp"
+                    android:clickable="true"
+                    android:src="@drawable/jn_damyang"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="183dp"
+                    android:layout_marginTop="491dp"
+                    android:text="담양"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <ImageView
+                    android:id="@+id/jn_gangjin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="142dp"
+                    android:layout_marginTop="575dp"
+                    android:clickable="true"
+                    android:src="@drawable/jn_gangjin"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="149dp"
+                    android:layout_marginTop="587dp"
+                    android:text="강진"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <ImageView
+                    android:id="@+id/jn_goheung"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="201dp"
+                    android:layout_marginTop="576dp"
+                    android:clickable="true"
+                    android:src="@drawable/jn_goheung"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="213dp"
+                    android:layout_marginTop="607dp"
+                    android:text="고흥"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <ImageView
+                    android:id="@+id/jn_goksung"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="205dp"
+                    android:layout_marginTop="497dp"
+                    android:clickable="true"
+                    android:src="@drawable/jn_goksung"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="221dp"
+                    android:layout_marginTop="510dp"
+                    android:text="곡성"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <ImageView
+                    android:id="@+id/jn_gurye"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="241dp"
+                    android:layout_marginTop="496dp"
+                    android:clickable="true"
+                    android:src="@drawable/jn_gurye"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="250dp"
+                    android:layout_marginTop="510dp"
+                    android:text="구례"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <ImageView
+                    android:id="@+id/jn_gwangju"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="144dp"
+                    android:layout_marginTop="502dp"
+                    android:clickable="true"
+                    android:src="@drawable/jn_gwangju"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="163dp"
+                    android:layout_marginTop="513dp"
+                    android:text="광주"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <ImageView
+                    android:id="@+id/jn_gwangyang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="258dp"
+                    android:layout_marginTop="526dp"
+                    android:clickable="true"
+                    android:src="@drawable/jn_gwangyang"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="265dp"
+                    android:layout_marginTop="542dp"
+                    android:text="광양"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <ImageView
+                    android:id="@+id/jn_haenam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="93dp"
+                    android:layout_marginTop="575dp"
+                    android:clickable="true"
+                    android:src="@drawable/jn_haenam"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="123dp"
+                    android:layout_marginTop="610dp"
+                    android:text="해남"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <ImageView
+                    android:id="@+id/jn_hampyeong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="116dp"
+                    android:layout_marginTop="508dp"
+                    android:clickable="true"
+                    android:src="@drawable/jn_hampyeong"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="125dp"
+                    android:layout_marginTop="515dp"
+                    android:text="함평"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <ImageView
+                    android:id="@+id/jn_hwasoon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="170dp"
+                    android:layout_marginTop="517dp"
+                    android:clickable="true"
+                    android:src="@drawable/jn_hwasoon"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="183dp"
+                    android:layout_marginTop="540dp"
+                    android:text="화순"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <ImageView
+                    android:id="@+id/jn_jangseong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="141dp"
+                    android:layout_marginTop="471dp"
+                    android:clickable="true"
+                    android:src="@drawable/jn_jangseong"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="155dp"
+                    android:layout_marginTop="490dp"
+                    android:text="장성"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <ImageView
+                    android:id="@+id/jn_jindo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="64dp"
+                    android:layout_marginTop="600dp"
+                    android:clickable="true"
+                    android:src="@drawable/jn_jindo"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="613dp"
+                    android:text="진도"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <ImageView
+                    android:id="@+id/jn_muan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="527dp"
+                    android:clickable="true"
+                    android:src="@drawable/jn_muan"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="114dp"
+                    android:layout_marginTop="550dp"
+                    android:text="무안"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <ImageView
+                    android:id="@+id/jn_najoo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="129dp"
+                    android:layout_marginTop="526dp"
+                    android:clickable="true"
+                    android:src="@drawable/jn_najoo"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="145dp"
+                    android:layout_marginTop="537dp"
+                    android:text="나주"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <ImageView
+                    android:id="@+id/jn_suncheon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="213dp"
+                    android:layout_marginTop="522dp"
+                    android:clickable="true"
+                    android:src="@drawable/jn_suncheon"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="230dp"
+                    android:layout_marginTop="545dp"
+                    android:text="순천"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <ImageView
+                    android:id="@+id/jn_yeongkwang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="108dp"
+                    android:layout_marginTop="474dp"
+                    android:clickable="true"
+                    android:src="@drawable/jn_yeongkwang"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="118dp"
+                    android:layout_marginTop="493dp"
+                    android:text="영광"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <ImageView
+                    android:id="@+id/jn_yeongam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="108dp"
+                    android:layout_marginTop="550dp"
+                    android:clickable="true"
+                    android:src="@drawable/jn_yeongam"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="138dp"
+                    android:layout_marginTop="562dp"
+                    android:text="영암"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <ImageView
+                    android:id="@+id/jn_yeosu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="249dp"
+                    android:layout_marginTop="564dp"
+                    android:clickable="true"
+                    android:src="@drawable/jn_yeosu"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="263dp"
+                    android:layout_marginTop="578dp"
+                    android:text="여수"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <ImageView
+                    android:id="@+id/jeju"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="21dp"
+                    android:layout_marginTop="726dp"
+                    android:clickable="true"
+                    android:src="@drawable/jeju"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map"
+                    app:tint="@color/background_sky_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="53dp"
+                    android:layout_marginTop="743dp"
+                    android:text="제주도"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="425dp"
+                    android:layout_marginTop="313dp"
+                    android:text="안동"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="445dp"
+                    android:layout_marginTop="260dp"
+                    android:text="봉화"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="378dp"
+                    android:layout_marginTop="398dp"
+                    android:text="칠곡"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="415dp"
+                    android:layout_marginTop="457dp"
+                    android:text="청도"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="463dp"
+                    android:layout_marginTop="350dp"
+                    android:text="청송"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="393dp"
+                    android:layout_marginTop="430dp"
+                    android:text="대구"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="354dp"
+                    android:layout_marginTop="440dp"
+                    android:text="고령"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="330dp"
+                    android:layout_marginTop="390dp"
+                    android:text="김천"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="365dp"
+                    android:layout_marginTop="360dp"
+                    android:text="구미"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="410dp"
+                    android:layout_marginTop="380dp"
+                    android:text="군위"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="470dp"
+                    android:layout_marginTop="435dp"
+                    android:text="경주"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="420dp"
+                    android:layout_marginTop="435dp"
+                    android:text="경산"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="350dp"
+                    android:layout_marginTop="290dp"
+                    android:text="문경"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="478dp"
+                    android:layout_marginTop="382dp"
+                    android:text="포항"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="335dp"
+                    android:layout_marginTop="335dp"
+                    android:text="상주"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="350dp"
+                    android:layout_marginTop="415dp"
+                    android:text="성주"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="403dp"
+                    android:layout_marginTop="347dp"
+                    android:text="의성"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="493dp"
+                    android:layout_marginTop="260dp"
+                    android:text="울진"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="545dp"
+                    android:layout_marginTop="213dp"
+                    android:text="울릉도"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="383dp"
+                    android:layout_marginTop="300dp"
+                    android:text="예천"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="492dp"
+                    android:layout_marginTop="338dp"
+                    android:text="영덕"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="400dp"
+                    android:layout_marginTop="280dp"
+                    android:text="영주"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="470dp"
+                    android:layout_marginTop="300dp"
+                    android:text="영양"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="440dp"
+                    android:layout_marginTop="400dp"
+                    android:text="영천"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="445dp"
+                    android:layout_marginTop="530dp"
+                    android:text="부산"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="378dp"
+                    android:layout_marginTop="477dp"
+                    android:text="창녕"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="392dp"
+                    android:layout_marginTop="518dp"
+                    android:text="창원"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="565dp"
+                    android:layout_marginTop="265dp"
+                    android:text="독도"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="305dp"
+                    android:layout_marginTop="433dp"
+                    android:text="거창"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="388dp"
+                    android:layout_marginTop="580dp"
+                    android:text="거제"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="330dp"
+                    android:layout_marginTop="470dp"
+                    android:text="합천"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="284dp"
+                    android:layout_marginTop="530dp"
+                    android:text="하동"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="362dp"
+                    android:layout_marginTop="514dp"
+                    android:text="함안"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="280dp"
+                    android:layout_marginTop="460dp"
+                    android:text="함양"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="326dp"
+                    android:layout_marginTop="522dp"
+                    android:text="진주"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="420dp"
+                    android:layout_marginTop="516dp"
+                    android:text="김해"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="412dp"
+                    android:layout_marginTop="484dp"
+                    android:text="밀양"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="296dp"
+                    android:layout_marginTop="580dp"
+                    android:text="남해"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="322dp"
+                    android:layout_marginTop="548dp"
+                    android:text="사천"
+                    android:textColor="@color/black"
+                    android:textSize="8sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="296dp"
+                    android:layout_marginTop="492dp"
+                    android:text="산청"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="348dp"
+                    android:layout_marginTop="496dp"
+                    android:text="의령"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="473dp"
+                    android:layout_marginTop="480dp"
+                    android:text="울산"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="447dp"
+                    android:layout_marginTop="500dp"
+                    android:text="양산"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="342dp"
+                    android:layout_marginTop="552dp"
+                    android:text="고성"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="360dp"
+                    android:layout_marginTop="571dp"
+                    android:text="통영"
+                    android:textColor="@color/black"
+                    android:textSize="6sp"
+                    app:layout_constraintStart_toStartOf="@id/entire_map"
+                    app:layout_constraintTop_toTopOf="@+id/entire_map" />
 
                 <ImageView
                     android:id="@+id/entire_map"
@@ -1009,10 +3261,10 @@
                     android:src="@drawable/entire_map"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="1.0" />
+                    app:layout_constraintVertical_bias="0.0" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </ScrollView>
