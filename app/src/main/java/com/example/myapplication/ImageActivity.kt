@@ -17,7 +17,7 @@ class ImageActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_image)
 
         models = ArrayList<Model>()
         models!!.add(Model(R.drawable.sun, "2019-11-20", "#Busan #Haeundae #Friendship"))
