@@ -8,28 +8,34 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <TextView
             android:id="@+id/as_LocalTV"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:textSize="30dp"
-            android:text="Local_TV"/>
+            android:gravity="center"
+            android:text="Local_TV"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
         <Button
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="색상"/>
+            android:layout_height="match_parent"
+            android:text="색상" />
+
         <Button
             android:id="@+id/as_AddStoryBtn"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="스토리추가"/>
+            android:layout_height="match_parent"
+            android:text="스토리추가" />
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/as_RecyclerV"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"/>
+        android:layout_weight="1" />
 
 </LinearLayout>
