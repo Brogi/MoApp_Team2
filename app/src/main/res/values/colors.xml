@@ -9,4 +9,11 @@
     <color name="white">#FFFFFFFF</color>
     <color name="background_sky_blue">#FFB9EFF1</color>
     <color name="gray">#ECECEC</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="color1">#424549</color>
+    <color name="color2">#7e455e</color>
+    <color name="color3">#796e25</color>
+    <color name="color4">#59717c</color>
 </resources>
