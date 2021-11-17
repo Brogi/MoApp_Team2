@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.view.GestureDetector
@@ -45,7 +46,7 @@ class MapActivity : AppCompatActivity() {
             R.id.s_namyangju, R.id.s_osan, R.id.s_paju, R.id.s_pocheon, R.id.s_pyeongtaek,
             R.id.s_seongmodo, R.id.s_seongnam, R.id.s_seoul, R.id.s_siheung, R.id.s_suwon,
             R.id.s_uijeongbu, R.id.s_uiwang, R.id.s_yangju, R.id.s_yangpyeong, R.id.s_yeoju,
-            R.id.s_yeoncheon, R.id.s_yeongjongdo, R.id.s_yongin,
+            R.id.s_yeoncheon, R.id.s_yeongheungdo, R.id.s_yeongjongdo, R.id.s_yongin,
             // 전북
             R.id.jb_buan, R.id.jb_gimje, R.id.jb_gochang, R.id.jb_gunsan, R.id.jb_iksan,
             R.id.jb_imsil, R.id.jb_jangsu, R.id.jb_jeongeup, R.id.jb_jeonju, R.id.jb_jinan,
@@ -80,12 +81,60 @@ class MapActivity : AppCompatActivity() {
             R.id.kn_hapcheon, R.id.kn_jinju, R.id.kn_miryang, R.id.kn_namhae, R.id.kn_sacheon,
             R.id.kn_sancheong, R.id.kn_tongyeong, R.id.kn_uiryeong, R.id.kn_ulsan, R.id.kn_yangsan
         )
+        val mapName = arrayOf(
+            // 수도권
+            "안산", "안성", "안양", "부천", "대부도",
+            "동두천", "강화", "가평", "김포", "고양",
+            "군포", "구리", "과천", "광주", "광명",
+            "교동도", "하남", "화성", "이천", "인천",
+            "남양주", "오산", "파주", "포천", "평택",
+            "성모도", "성남", "서울", "시흥", "수원",
+            "의정부", "의왕", "양주", "양평", "여주",
+            "연천", "영흥도", "영종도", "용인",
+            // 전북
+            "부안", "김제", "고창", "군산", "익산",
+            "임실", "장수", "정읍", "전주", "진안",
+            "무주", "남원", "순창", "완주",
+            // 전남 및 제주
+            "보성", "장흥", "담양", "강진", "고흥",
+            "곡성", "구례", "광주", "광양", "해남",
+            "함평", "화순", "장성", "진도", "목포",
+            "무안", "나주", "순천", "영암", "영광",
+            "여수", "제주",
+            // 충청도
+            "아산", "보은", "보령", "부여", "천안",
+            "청주", "청양", "충주", "대전", "당진",
+            "단양", "음성", "금산", "괴산", "공주",
+            "계룡", "홍성", "제천", "증평", "진천",
+            "논산", "옥천", "세종", "서천", "서산",
+            "태안", "태안 아래", "영동", "예산",
+            // 강원
+            "철원", "춘천", "동해", "강릉", "횡성",
+            "홍천", "화천", "인제", "정선", "고성",
+            "평창", "삼척", "속초", "태백", "원주",
+            "양구", "양양", "영월",
+            // 경북
+            "안동", "봉화", "청도", "청송", "칠곡",
+            "대구", "독도", "김천", "고령", "구미",
+            "군위", "경주", "경산", "문경", "포항",
+            "상주", "성주", "의성", "울진", "울릉도",
+            "예천", "영천", "영덕", "영주", "영양",
+            // 경남
+            "부산", "창녕", "창원", "거창", "거제",
+            "김해", "고성", "하동", "함안", "함양",
+            "합천", "진주", "밀양", "남해", "사천",
+            "산청", "통영", "의량", "울산", "양산"
+        )
         val mapImage = arrayOfNulls<ImageView>(167) // 수도권 39, 전북 14, 전남 22, 충청도 29, 강원 18, 경북 25, 경남 20
 
         for (i in mapId.indices) {
             mapImage[i] = findViewById<ImageView>(mapId[i])
             mapImage[i]!!.setOnClickListener {
                 mapImage[i]!!.setColorFilter(Color.parseColor("#9CD7FF"))
+
+                var intent = Intent(applicationContext, StoriesActivity::class.java)
+                intent.putExtra("Local", mapName[i])
+                startActivity(intent)
             }
         }
     }
@@ -101,6 +150,7 @@ class MapActivity : AppCompatActivity() {
         gestureDetector.onTouchEvent(ev)
         return gestureDetector.onTouchEvent(ev)
     }
+
     inner class ScaleListener : ScaleGestureDetector.SimpleOnScaleGestureListener() {
         override fun onScale(detector: ScaleGestureDetector?): Boolean {
             scaleFactor *= mScaleGestureDetector!!.scaleFactor
