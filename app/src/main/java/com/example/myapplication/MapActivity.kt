@@ -2,15 +2,40 @@ package com.example.myapplication
 
 import android.graphics.Color
 import android.os.Bundle
+import android.view.GestureDetector
+import android.view.MotionEvent
+import android.view.ScaleGestureDetector
+import android.view.View
 import android.widget.ImageView
+import android.widget.RelativeLayout
+import android.widget.ScrollView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.constraintlayout.widget.Group
 
 class MapActivity : AppCompatActivity() {
+    private var mScaleGestureDetector: ScaleGestureDetector? = null
+    private lateinit var gestureDetector: GestureDetector
+    private var scaleFactor = 1.0f
+    private val scrollView: ScrollView by lazy {
+        findViewById(R.id.scrollView)
+    }
+    private val constraintLayout: ConstraintLayout by lazy {
+        findViewById(R.id.constraintLayout)
+    }
+//    private val mapView: View by lazy {
+//        findViewById(R.id.mapView)
+//    }
+//    private var moveX = 0f
+//    private var moveY = 0f
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_map)
 
-        val entireMap = findViewById<ImageView>(R.id.entire_map)
+        gestureDetector = GestureDetector(this, GestureListener())
+        mScaleGestureDetector = ScaleGestureDetector(this, ScaleListener())
+
         val mapId = arrayOf(
             // 수도권
             R.id.s_ansan, R.id.s_anseong, R.id.s_anyang, R.id.s_bucheon, R.id.s_daebudo,
@@ -62,6 +87,39 @@ class MapActivity : AppCompatActivity() {
             mapImage[i]!!.setOnClickListener {
                 mapImage[i]!!.setColorFilter(Color.parseColor("#9CD7FF"))
             }
+        }
+    }
+
+    override fun onTouchEvent(event: MotionEvent?): Boolean {
+        mScaleGestureDetector!!.onTouchEvent(event)
+        return true
+    }
+
+    override fun dispatchTouchEvent(ev: MotionEvent?): Boolean {
+        super.dispatchTouchEvent(ev)
+        mScaleGestureDetector!!.onTouchEvent(ev)
+        gestureDetector.onTouchEvent(ev)
+        return gestureDetector.onTouchEvent(ev)
+    }
+    inner class ScaleListener : ScaleGestureDetector.SimpleOnScaleGestureListener() {
+        override fun onScale(detector: ScaleGestureDetector?): Boolean {
+            scaleFactor *= mScaleGestureDetector!!.scaleFactor
+
+            scaleFactor = Math.max(0.5f, Math.min(scaleFactor, 4.0f))
+
+            constraintLayout.scaleX = scaleFactor
+            constraintLayout.scaleY = scaleFactor
+            return true
+        }
+    }
+
+    inner class GestureListener: GestureDetector.SimpleOnGestureListener() {
+        override fun onDown(e: MotionEvent?): Boolean {
+            return true
+        }
+
+        override fun onDoubleTap(e: MotionEvent?): Boolean {
+            return true
         }
     }
 }
