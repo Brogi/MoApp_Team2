@@ -7,6 +7,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/linear_layout_border"
         android:orientation="horizontal">
         <TextView
             android:id="@+id/as_LocalTV"
@@ -17,13 +18,30 @@
             android:text="Local_TV"/>
         <Button
             android:layout_width="wrap_content"
+<<<<<<< Updated upstream
             android:layout_height="wrap_content"
             android:text="색상"/>
+=======
+            android:layout_height="match_parent"
+            android:background="@drawable/background_button"
+            android:layout_margin="5dp"
+            android:textSize="16sp"
+            android:text="색상 변경" />
+
+>>>>>>> Stashed changes
         <Button
             android:id="@+id/as_AddStoryBtn"
+            android:background="@drawable/background_button"
+            android:layout_margin="5dp"
+            android:textSize="16sp"
             android:layout_width="wrap_content"
+<<<<<<< Updated upstream
             android:layout_height="wrap_content"
             android:text="스토리추가"/>
+=======
+            android:layout_height="match_parent"
+            android:text="스토리 추가" />
+>>>>>>> Stashed changes
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
