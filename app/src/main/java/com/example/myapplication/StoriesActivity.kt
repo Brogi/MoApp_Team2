@@ -1,17 +1,26 @@
 package com.example.myapplication
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
 class StoriesActivity : AppCompatActivity() {
     lateinit var recyclerView: RecyclerView
+    lateinit var addStoryBtn : Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_stories)
 
         recyclerView = findViewById(R.id.as_RecyclerV)
+        addStoryBtn = findViewById(R.id.as_AddStoryBtn)
+
+        addStoryBtn.setOnClickListener {
+            var intent = Intent(applicationContext,AddStoryActivity::class.java)
+            startActivity(intent)
+        }
 
         var dataL = arrayListOf<ThumbNailData>(
             ThumbNailData("2021.01.01",R.drawable.pic_a),

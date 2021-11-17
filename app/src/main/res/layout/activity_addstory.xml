@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="left"
+        android:text="3/3 image"
+        android:id="@+id/imagecount"
+        ></EditText>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+        <TableRow>
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:src="@drawable/test"></ImageView>
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:src="@drawable/test2"
+                android:id="@+id/image2"></ImageView>
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:src="@drawable/test3"
+                android:id="@+id/image3"></ImageView>
+        </TableRow>
+    </TableLayout>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="사진 선택"
+        android:textSize="15sp"
+        android:id="@+id/btnImage"></Button>
+
+    <DatePicker
+        android:datePickerMode="spinner"
+        android:id="@+id/datePicker1"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:calendarViewShown="false" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/hash"
+        android:hint="#Hashtag"
+        ></EditText>
+
+    <EditText
+        android:id="@+id/edtDiary"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#00ffff"
+        android:lines="8"></EditText>
+
+    <Button
+        android:id="@+id/btnWrite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="Button" />
+
+</LinearLayout>
