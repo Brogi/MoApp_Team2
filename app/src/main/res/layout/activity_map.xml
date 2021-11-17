@@ -3826,13 +3826,11 @@
                     android:textSize="10sp"
                     app:layout_constraintStart_toStartOf="@id/entire_map"
                     app:layout_constraintTop_toTopOf="@+id/entire_map" />
-
-
+                
                 <ImageView
                     android:id="@+id/entire_map"
                     android:layout_width="588dp"
                     android:layout_height="790dp"
-                    android:src="@drawable/entire_map"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="1.0"
