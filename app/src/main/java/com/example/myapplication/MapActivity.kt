@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.widget.ImageView
@@ -61,6 +62,8 @@ class MapActivity : AppCompatActivity() {
             mapImage[i] = findViewById<ImageView>(mapId[i])
             mapImage[i]!!.setOnClickListener {
                 mapImage[i]!!.setColorFilter(Color.parseColor("#9CD7FF"))
+                var intent = Intent(applicationContext,StoriesActivity::class.java)
+                startActivity(intent)
             }
         }
     }
