@@ -1,85 +1,131 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
+    android:padding="20dp"
     tools:context=".MainActivity">
 
-    <EditText
+    <TextView
+        android:id="@+id/imagecount"
         android:layout_width="wrap_content"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="left"
         android:text="3/3 image"
-        android:id="@+id/imagecount"
-        ></EditText>
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TableLayout
+        android:id="@+id/table"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imagecount">
+
         <TableRow>
+
             <ImageView
                 android:id="@+id/image1"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:layout_gravity="center"
                 android:adjustViewBounds="true"
-                android:src="@drawable/test"></ImageView>
+                android:background="@color/gray"
+                android:src="@drawable/test" />
+
             <ImageView
+                android:id="@+id/image2"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:layout_gravity="center"
                 android:adjustViewBounds="true"
-                android:src="@drawable/test2"
-                android:id="@+id/image2"></ImageView>
+                android:background="@color/gray"
+                android:src="@drawable/test2" />
+
             <ImageView
+                android:id="@+id/image3"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:layout_gravity="center"
                 android:adjustViewBounds="true"
-                android:src="@drawable/test3"
-                android:id="@+id/image3"></ImageView>
+                android:background="@color/gray"
+                android:src="@drawable/test3" />
         </TableRow>
     </TableLayout>
+
     <Button
-        android:layout_width="200dp"
-        android:layout_height="50dp"
+        android:id="@+id/btnImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background_button"
         android:text="사진 선택"
         android:textSize="15sp"
-        android:id="@+id/btnImage"></Button>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/table" />
 
-    <DatePicker
-        android:datePickerMode="spinner"
-        android:id="@+id/datePicker1"
-        android:layout_width="wrap_content"
-        android:layout_height="100dp"
-        android:calendarViewShown="false" />
-
-    <EditText
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/hash"
-        android:hint="#Hashtag"
-        ></EditText>
-
-    <EditText
-        android:id="@+id/edtDiary"
-        android:layout_width="300dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:background="#00ffff"
-        android:lines="8"></EditText>
-
-    <Button
-        android:id="@+id/btnWrite"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:enabled="false"
-        android:text="Button" />
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@id/table"
+        app:layout_constraintStart_toStartOf="@id/table"
+        app:layout_constraintTop_toBottomOf="@id/btnImage">
 
-</LinearLayout>
+        <DatePicker
+            android:id="@+id/datePicker1"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/hash"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="#Hashtag"
+            app:layout_constraintEnd_toEndOf="@id/datePicker1"
+            app:layout_constraintStart_toStartOf="@id/datePicker1"
+            app:layout_constraintTop_toBottomOf="@id/datePicker1" />
+
+        <EditText
+            android:id="@+id/edtDiary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/map_border"
+            android:hint="내용"
+            android:lines="6"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="@id/datePicker1"
+            app:layout_constraintStart_toStartOf="@id/datePicker1"
+            app:layout_constraintTop_toBottomOf="@id/hash" />
+
+        <Button
+            android:id="@+id/btnWrite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/background_button"
+            android:enabled="false"
+            android:text="업로드"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/datePicker1"
+            app:layout_constraintStart_toStartOf="@id/datePicker1"
+            app:layout_constraintTop_toBottomOf="@id/edtDiary" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
