@@ -134,6 +134,7 @@ class MapActivity : AppCompatActivity() {
 
                 var intent = Intent(applicationContext, StoriesActivity::class.java)
                 intent.putExtra("Local", mapName[i])
+                intent.putExtra("Color", "#000000")
                 startActivity(intent)
             }
         }
