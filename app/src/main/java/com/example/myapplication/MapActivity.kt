@@ -146,11 +146,7 @@ class MapActivity : AppCompatActivity() {
             }
             mapImage[i]!!.setOnClickListener {
                 var intent = Intent(applicationContext, StoriesActivity::class.java)
-<<<<<<< Updated upstream
-                intent.putExtra("Local", mapName[i])
-=======
                 intent.putExtra("Local", mapId[i])
->>>>>>> Stashed changes
                 startActivity(intent)
                 finish()
             }

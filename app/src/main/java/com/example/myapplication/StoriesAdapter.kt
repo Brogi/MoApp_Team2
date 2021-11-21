@@ -29,9 +29,9 @@ class StoriesAdapter(private val context : Context, private  val dataList : Arra
         holder.dateText.text = dataList[position].date
         holder.layout.setOnClickListener {
             // To be removed
-            Toast.makeText(context,"Hello world!",Toast.LENGTH_SHORT).show()
-            /*var intent = Intent(context,액티비티이름::class.java)
-            startActivity(intent)*/
+            //Toast.makeText(context,"Hello world!",Toast.LENGTH_SHORT).show()
+            var intent = Intent(context,ImageActivity::class.java)
+            context.startActivity(intent)
         }
     }
 
