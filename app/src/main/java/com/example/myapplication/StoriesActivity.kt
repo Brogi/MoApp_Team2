@@ -4,37 +4,48 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import androidx.room.Room
+import com.example.myapplication.model.Map
 
 class StoriesActivity : AppCompatActivity() {
     lateinit var recyclerView: RecyclerView
     lateinit var addStoryBtn: Button
     lateinit var changeColorBtn: Button
+    lateinit var homeBtn: Button
     lateinit var localTv: TextView
+    lateinit var db: AppDatabase
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_stories)
 
-        recyclerView = findViewById(R.id.as_RecyclerV)
-        addStoryBtn = findViewById(R.id.as_AddStoryBtn)
-        changeColorBtn = findViewById(R.id.as_ChangeColorBtn)
-        localTv = findViewById(R.id.as_LocalTV)
+        initView()
+        callDB()
 
         var intent = intent
+        val mapId = intent.getIntExtra("Local", 0)
+        val output = db.mapDao().getAllById(mapId)[0]
 
-        localTv.text = intent.getStringExtra("Local")
-        var backgroundColor = intent.getStringExtra("Color")
+        var intent = Intent(applicationContext,AddStoryActivity::class.java)
+        localTv.text = output.mapName
 
         addStoryBtn.setOnClickListener {
-            var intent = Intent(applicationContext, AddStoryActivity::class.java)
+            intent = Intent(applicationContext, AddStoryActivity::class.java)
             startActivity(intent)
         }
         changeColorBtn.setOnClickListener {
-            var intent = Intent(applicationContext, ChangeColorActivity::class.java)
-            intent.putExtra("OriginalColor", backgroundColor)
+            intent = Intent(applicationContext, ChangeColorActivity::class.java)
+            intent.putExtra("Local", mapId)
             startActivity(intent)
+        }
+        homeBtn.setOnClickListener {
+            intent = Intent(applicationContext, MapActivity::class.java)
+            startActivity(intent)
+            finish()
         }
 
         var dataL = arrayListOf<ThumbNailData>(
@@ -62,5 +73,21 @@ class StoriesActivity : AppCompatActivity() {
         val gridLayoutManager = GridLayoutManager(applicationContext, 3)
 
         recyclerView.layoutManager = gridLayoutManager
+    }
+
+    private fun initView() {
+        recyclerView = findViewById(R.id.as_RecyclerV)
+        addStoryBtn = findViewById(R.id.as_AddStoryBtn)
+        changeColorBtn = findViewById(R.id.as_ChangeColorBtn)
+        homeBtn = findViewById(R.id.as_HomeBtn)
+        localTv = findViewById(R.id.as_LocalTV)
+    }
+
+    private fun callDB() {
+        db = Room.databaseBuilder(
+            applicationContext,
+            AppDatabase::class.java,
+            "mapDB"
+        ).allowMainThreadQueries().build()
     }
 }

@@ -3,6 +3,7 @@ package com.example.myapplication
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
+import android.util.Log
 import android.view.GestureDetector
 import android.view.MotionEvent
 import android.view.ScaleGestureDetector
@@ -10,25 +11,21 @@ import android.view.View
 import android.widget.ImageView
 import android.widget.RelativeLayout
 import android.widget.ScrollView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.constraintlayout.widget.Group
+import androidx.room.Room
+import com.example.myapplication.model.Map
 
 class MapActivity : AppCompatActivity() {
     private var mScaleGestureDetector: ScaleGestureDetector? = null
     private lateinit var gestureDetector: GestureDetector
+    private lateinit var db: AppDatabase
     private var scaleFactor = 1.0f
-    private val scrollView: ScrollView by lazy {
-        findViewById(R.id.scrollView)
-    }
     private val constraintLayout: ConstraintLayout by lazy {
         findViewById(R.id.constraintLayout)
     }
-//    private val mapView: View by lazy {
-//        findViewById(R.id.mapView)
-//    }
-//    private var moveX = 0f
-//    private var moveY = 0f
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -127,17 +124,39 @@ class MapActivity : AppCompatActivity() {
         )
         val mapImage = arrayOfNulls<ImageView>(167) // 수도권 39, 전북 14, 전남 22, 충청도 29, 강원 18, 경북 25, 경남 20
 
+        db = Room.databaseBuilder(
+            applicationContext,
+            AppDatabase::class.java,
+            "mapDB"
+        ).allowMainThreadQueries().build()
+
+        val count = db.mapDao().getAllCount()
+        //Toast.makeText(this, count.toString(), Toast.LENGTH_SHORT).show()
+
+        //db.mapDao().deleteAll()
+
         for (i in mapId.indices) {
             mapImage[i] = findViewById<ImageView>(mapId[i])
-            mapImage[i]!!.setOnClickListener {
-                mapImage[i]!!.setColorFilter(Color.parseColor("#9CD7FF"))
 
+            if(count == 0)
+                saveMapInformation(mapId[i], mapName[i], "#FFFFFF")
+            else {
+                val mapColor = db.mapDao().getAllById(mapId[i])[0].color
+                mapImage[i]!!.setColorFilter(Color.parseColor(mapColor))
+            }
+            mapImage[i]!!.setOnClickListener {
                 var intent = Intent(applicationContext, StoriesActivity::class.java)
-                intent.putExtra("Local", mapName[i])
-                intent.putExtra("Color", "#000000")
+                intent.putExtra("Local", mapId[i])
                 startActivity(intent)
+                finish()
             }
         }
+    }
+
+    private fun saveMapInformation(mapId: Int, mapName: String, mapColor: String) {
+        Thread {
+            db.mapDao().insertMap(Map(mapId, mapName, mapColor))
+        }.start()
     }
 
     override fun onTouchEvent(event: MotionEvent?): Boolean {

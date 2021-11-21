@@ -5,10 +5,13 @@ import android.graphics.Color
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.room.Room
 import com.larswerkman.holocolorpicker.ColorPicker
 import com.larswerkman.holocolorpicker.SaturationBar
 import com.larswerkman.holocolorpicker.ValueBar
+import java.io.File
 import java.util.*
 
 class ChangeColorActivity : AppCompatActivity() {
@@ -24,10 +27,27 @@ class ChangeColorActivity : AppCompatActivity() {
     private lateinit var changeBtn: Button
     private lateinit var cancelBtn: Button
 
+    private lateinit var db: AppDatabase
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_change_color)
 
+        initView()
+        callDB()
+
+        val intent = intent
+        val mapId = intent.getIntExtra("Local", 0)
+        val output = db.mapDao().getAllById(mapId)[0]
+        originalHex = output.color.toString()
+
+        textViewHEX.text = "HEX : $originalHex"
+
+        initPicker(0, 0, 0)
+        btnClick(mapId)
+    }
+
+    private fun initView() {
         textViewHEX = findViewById(R.id.textViewHEX)
 
         textViewNewHEX = findViewById(R.id.textViewNewHEX)
@@ -37,18 +57,21 @@ class ChangeColorActivity : AppCompatActivity() {
 
         changeBtn = findViewById(R.id.changeBtn)
         cancelBtn = findViewById(R.id.cancelBtn)
-
-        var intent = intent
-        originalHex = intent.getStringExtra("OriginalColor").toString()
-        textViewHEX.text = "HEX : $originalHex"
-
-        initPicker(0, 0, 0)
-        btnClick()
     }
 
-    private fun btnClick() {
+    private fun callDB() {
+        db = Room.databaseBuilder(
+            applicationContext,
+            AppDatabase::class.java,
+            "mapDB"
+        ).allowMainThreadQueries().build()
+    }
+
+    private fun btnClick(mapId: Int) {
         changeBtn.setOnClickListener {
-            // DB에 추가
+            val newColor = textViewNewHEX.text.toString()
+            val result =  newColor.substring(newColor.length - 7, newColor.length)
+            db.mapDao().updateColor(result, mapId)
             finish()
         }
 
@@ -91,6 +114,5 @@ class ChangeColorActivity : AppCompatActivity() {
             )
 
         }
-
     }
 }
