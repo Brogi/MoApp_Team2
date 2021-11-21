@@ -10,6 +10,12 @@
         android:background="@drawable/linear_layout_border"
         android:orientation="horizontal">
 
+        <Button
+            android:id="@+id/as_HomeBtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ic_baseline_home_24" />
+
         <TextView
             android:id="@+id/as_LocalTV"
             android:layout_width="0dp"
