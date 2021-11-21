@@ -29,8 +29,6 @@ class StoriesActivity : AppCompatActivity() {
         var intent = intent
         val mapId = intent.getIntExtra("Local", 0)
         val output = db.mapDao().getAllById(mapId)[0]
-
-        var intent = Intent(applicationContext,AddStoryActivity::class.java)
         localTv.text = output.mapName
 
         addStoryBtn.setOnClickListener {
