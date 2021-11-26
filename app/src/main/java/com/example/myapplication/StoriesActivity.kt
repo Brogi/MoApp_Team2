@@ -65,12 +65,12 @@ class StoriesActivity : AppCompatActivity() {
             finish()
         }
 
-        var dataGetStory = db.storyDao().getAllById(1)
-        var dataGetImage = db.pictureDao().getAllById(1)
+        var dataGetStory = db.storyDao().getAllById(mapId)
 
         dataL = ArrayList<ThumbNailData>()
-        for(i in dataGetImage.indices){
-            dataL.add(ThumbNailData(dataGetStory[i].date,dataGetImage[i].image!!))
+        for(i in dataGetStory.indices){
+            var dataGetImage = db.pictureDao().getAllByStoryId(dataGetStory[i].storyId!!)
+            dataL.add(ThumbNailData(dataGetStory[i].date,dataGetImage[0].image!!,dataGetStory[i].storyId!!))
         }
 
         /*dataL = arrayListOf<ThumbNailData>(

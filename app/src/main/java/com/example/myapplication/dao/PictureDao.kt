@@ -15,7 +15,7 @@ interface PictureDao {
     fun insertPicture(picture : Picture)
 
     @Query("SELECT * FROM picture WHERE storyId = :id")
-    fun getAllById(id: Int): List<Picture>
+    fun getAllByStoryId(id: Int): List<Picture>
 
     @Query("SELECT COUNT(*) FROM picture")
     fun getAllCount() : Int
