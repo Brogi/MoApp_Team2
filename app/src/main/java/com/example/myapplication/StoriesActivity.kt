@@ -2,6 +2,8 @@ package com.example.myapplication
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.animation.Animation
+import android.view.animation.AnimationUtils
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
@@ -10,14 +12,19 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.room.Room
 import com.example.myapplication.model.Map
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class StoriesActivity : AppCompatActivity() {
     lateinit var recyclerView: RecyclerView
-    lateinit var addStoryBtn: Button
-    lateinit var changeColorBtn: Button
-    lateinit var homeBtn: Button
+    lateinit var floatingBtn: FloatingActionButton
+    lateinit var addStoryBtn: FloatingActionButton
+    lateinit var changeColorBtn: FloatingActionButton
+    lateinit var backBtn: Button
     lateinit var localTv: TextView
     lateinit var db: AppDatabase
+    lateinit var fabOpen: Animation
+    lateinit var fabClose: Animation
+    var isFabOpen: Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,18 +36,25 @@ class StoriesActivity : AppCompatActivity() {
         var intent = intent
         val mapId = intent.getIntExtra("Local", 0)
         val output = db.mapDao().getAllById(mapId)[0]
+
+        intent = Intent(applicationContext, AddStoryActivity::class.java)
         localTv.text = output.mapName
 
+        floatingBtn.setOnClickListener {
+            anim()
+        }
         addStoryBtn.setOnClickListener {
+            anim()
             intent = Intent(applicationContext, AddStoryActivity::class.java)
             startActivity(intent)
         }
         changeColorBtn.setOnClickListener {
+            anim()
             intent = Intent(applicationContext, ChangeColorActivity::class.java)
             intent.putExtra("Local", mapId)
             startActivity(intent)
         }
-        homeBtn.setOnClickListener {
+        backBtn.setOnClickListener {
             intent = Intent(applicationContext, MapActivity::class.java)
             startActivity(intent)
             finish()
@@ -73,11 +87,34 @@ class StoriesActivity : AppCompatActivity() {
         recyclerView.layoutManager = gridLayoutManager
     }
 
+    private fun anim() {
+        if(isFabOpen) {
+            floatingBtn.setImageResource(R.drawable.ic_add)
+            addStoryBtn.startAnimation(fabClose)
+            changeColorBtn.startAnimation(fabClose)
+            addStoryBtn.isClickable = false
+            changeColorBtn.isClickable = false
+            isFabOpen = false
+        } else {
+            floatingBtn.setImageResource(R.drawable.ic_close)
+            addStoryBtn.startAnimation(fabOpen)
+            changeColorBtn.startAnimation(fabOpen)
+            addStoryBtn.isClickable = true
+            changeColorBtn.isClickable = true
+            isFabOpen = true
+        }
+    }
+
     private fun initView() {
-        recyclerView = findViewById(R.id.as_RecyclerV)
+        fabOpen = AnimationUtils.loadAnimation(applicationContext, R.anim.fab_open)
+        fabClose = AnimationUtils.loadAnimation(applicationContext, R.anim.fab_close)
+
+        floatingBtn = findViewById(R.id.as_FloatingBtn)
         addStoryBtn = findViewById(R.id.as_AddStoryBtn)
         changeColorBtn = findViewById(R.id.as_ChangeColorBtn)
-        homeBtn = findViewById(R.id.as_HomeBtn)
+
+        recyclerView = findViewById(R.id.as_RecyclerV)
+        backBtn = findViewById(R.id.as_BackBtn)
         localTv = findViewById(R.id.as_LocalTV)
     }
 
