@@ -1,15 +1,22 @@
 package com.example.myapplication
 
 import android.content.Context
+import android.content.Intent
+import android.graphics.Bitmap
+import android.graphics.BitmapFactory
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
-import android.widget.Button
-import android.widget.DatePicker
-import android.widget.EditText
-import android.widget.Toast
+import android.widget.*
+import androidx.core.app.ActivityCompat
+import androidx.room.Room
+import com.example.myapplication.model.Converter
+import com.example.myapplication.model.Picture
+import com.example.myapplication.model.Story
 import java.io.FileInputStream
 import java.io.IOException
+import java.lang.Exception
 import java.util.*
 
 class AddStoryActivity : AppCompatActivity() {
@@ -20,11 +27,14 @@ class AddStoryActivity : AppCompatActivity() {
     lateinit var hash : String
     lateinit var btnHash: Button
     lateinit var filename1 : String
+    lateinit var db : AppDatabase
+    lateinit var image1 : ImageView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_addstory)
         title = "게시글 작성하기"
 
+        image1 = findViewById<ImageView>(R.id.image1)
 
         dp = findViewById<DatePicker>(R.id.datePicker1)
         edtDiary = findViewById<EditText>(R.id.edtDiary)
@@ -35,10 +45,15 @@ class AddStoryActivity : AppCompatActivity() {
         var cMonth = cal.get(Calendar.MONTH)
         var cDay = cal.get(Calendar.DAY_OF_MONTH)
 
+        var intent = intent
+        val mapId = intent.getIntExtra("Local", 0)
+
         filename1 =Integer.toString(cYear)+"_"+Integer.toString(cMonth+1)+"_"+Integer.toString(cDay)+".txt"
         var str1=readDiary(filename1)
         edtDiary.setText(str1)
         btnWrite.isEnabled = true
+
+        callDB()
 
         dp.init(cYear, cMonth, cDay) { view, year, monthOfYear, dayOfMonth ->
             fileName = (Integer.toString(year) + "_"
@@ -50,11 +65,20 @@ class AddStoryActivity : AppCompatActivity() {
         }
 
         btnWrite.setOnClickListener {
-            var outFs = openFileOutput(fileName, Context.MODE_PRIVATE)
-            var str = edtDiary.text.toString()
-            outFs.write(str.toByteArray())
-            outFs.close()
-            Toast.makeText(applicationContext, "$fileName 이 저장됨", Toast.LENGTH_SHORT).show()
+            try{
+                // 동적으로 수정하기
+                db.storyDao().insertStory(Story(null,mapId,"1111.11.11","Hello world","JODDAEDDA!"))
+                val storycount = db.storyDao().getAllCount()
+                db.pictureDao().insertPicture(Picture(null,storycount, BitmapFactory.decodeFile("/storage/emulated/0/DCIM/airplane.png")))
+            }catch (e : Exception){
+                Toast.makeText(applicationContext,e.toString(),Toast.LENGTH_LONG).show()
+            }
+
+
+            var intent = Intent(applicationContext, StoriesActivity::class.java)
+            intent.putExtra("Local", mapId)
+            startActivity(intent)
+            finish()
         }
     }
 
@@ -75,5 +99,13 @@ class AddStoryActivity : AppCompatActivity() {
             btnWrite.text = "업로드"
         }
         return diaryStr
+    }
+
+    private fun callDB() {
+        db = Room.databaseBuilder(
+            applicationContext,
+            AppDatabase::class.java,
+            "mapDB"
+        ).allowMainThreadQueries().build()
     }
 }

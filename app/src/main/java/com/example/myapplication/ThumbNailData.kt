@@ -1,4 +1,6 @@
 package com.example.myapplication
 
-class ThumbNailData(val date : String, val tnImage : Int) {
+import android.graphics.Bitmap
+
+class ThumbNailData(val date : String, val tnImage : Bitmap) {
 }

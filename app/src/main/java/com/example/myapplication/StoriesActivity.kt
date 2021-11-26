@@ -1,6 +1,7 @@
 package com.example.myapplication
 
 import android.content.Intent
+import android.graphics.BitmapFactory
 import android.os.Bundle
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
@@ -26,6 +27,8 @@ class StoriesActivity : AppCompatActivity() {
     lateinit var fabClose: Animation
     var isFabOpen: Boolean = false
 
+    lateinit var dataL : ArrayList<ThumbNailData>
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_stories)
@@ -46,7 +49,9 @@ class StoriesActivity : AppCompatActivity() {
         addStoryBtn.setOnClickListener {
             anim()
             intent = Intent(applicationContext, AddStoryActivity::class.java)
+            intent.putExtra("Local",mapId)
             startActivity(intent)
+            finish()
         }
         changeColorBtn.setOnClickListener {
             anim()
@@ -60,24 +65,17 @@ class StoriesActivity : AppCompatActivity() {
             finish()
         }
 
-        var dataL = arrayListOf<ThumbNailData>(
-            ThumbNailData("2021.01.01", R.drawable.pic_a),
-            ThumbNailData("2021.02.02", R.drawable.pic_b),
-            ThumbNailData("2021.03.03", R.drawable.pic_c),
-            ThumbNailData("2021.04.04", R.drawable.pic_d),
-            ThumbNailData("2021.05.05", R.drawable.pic_e),
-            ThumbNailData("2021.06.06", R.drawable.pic_f),
-            ThumbNailData("2021.07.07", R.drawable.pic_g),
-            ThumbNailData("2021.08.08", R.drawable.pic_a),
-            ThumbNailData("2021.01.01", R.drawable.pic_a),
-            ThumbNailData("2021.02.02", R.drawable.pic_b),
-            ThumbNailData("2021.03.03", R.drawable.pic_c),
-            ThumbNailData("2021.04.04", R.drawable.pic_d),
-            ThumbNailData("2021.05.05", R.drawable.pic_e),
-            ThumbNailData("2021.06.06", R.drawable.pic_f),
-            ThumbNailData("2021.07.07", R.drawable.pic_g),
-            ThumbNailData("2021.08.08", R.drawable.pic_a)
-        )
+        var dataGetStory = db.storyDao().getAllById(1)
+        var dataGetImage = db.pictureDao().getAllById(1)
+
+        dataL = ArrayList<ThumbNailData>()
+        for(i in dataGetImage.indices){
+            dataL.add(ThumbNailData(dataGetStory[i].date,dataGetImage[i].image!!))
+        }
+
+        /*dataL = arrayListOf<ThumbNailData>(
+            ThumbNailData("2021.01.01", BitmapFactory.decodeResource(applicationContext.resources,R.drawable.pic_a))
+        )*/
 
         val myAdapter = StoriesAdapter(this, dataL)
         recyclerView.adapter = myAdapter

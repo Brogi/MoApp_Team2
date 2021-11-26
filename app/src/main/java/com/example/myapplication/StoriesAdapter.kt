@@ -25,7 +25,10 @@ class StoriesAdapter(private val context : Context, private  val dataList : Arra
     }
 
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
-        holder.tnImage.setImageResource(dataList[position].tnImage)
+
+        if (dataList.size == 0)
+            return
+        holder.tnImage.setImageBitmap(dataList[position].tnImage)
         holder.dateText.text = dataList[position].date
         holder.layout.setOnClickListener {
             // To be removed
