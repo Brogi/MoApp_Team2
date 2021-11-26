@@ -19,5 +19,5 @@ interface StoryDao {
     fun getAllCount() : Int
 
     @Query("SELECT * FROM story WHERE storyId = :id")
-    fun getByStoryId(id : Int): Story
+    fun getByStoryId(id : Int): List<Story>
 }

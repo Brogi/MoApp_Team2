@@ -27,7 +27,7 @@ class Adapter(private val models: ArrayList<Model>, private val context: Context
         val date: TextView = view.findViewById(R.id.date)
         val hashtag: TextView = view.findViewById(R.id.hashtag)
 
-        imageView.setImageResource(models[position].image)
+        imageView.setImageBitmap(models[position].image)
         date.setText(models[position].date)
         hashtag.setText(models[position].hashtag)
 

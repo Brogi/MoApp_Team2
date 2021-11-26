@@ -1,5 +1,7 @@
 package com.example.myapplication
 
-class Model(var image: Int, var date: String, var hashtag: String) {
+import android.graphics.Bitmap
+
+class Model(var image: Bitmap, var date: String, var hashtag: String) {
 
 }
