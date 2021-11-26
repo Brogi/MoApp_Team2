@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -29,15 +30,20 @@ class AddStoryActivity : AppCompatActivity() {
     lateinit var filename1 : String
     lateinit var db : AppDatabase
     lateinit var image1 : ImageView
+    lateinit var image2 : ImageView
+    lateinit var btnImage : Button
+    val GALLARY = 111
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_addstory)
         title = "게시글 작성하기"
 
         image1 = findViewById<ImageView>(R.id.image1)
+        image2 = findViewById(R.id.image2)
 
         dp = findViewById<DatePicker>(R.id.datePicker1)
         edtDiary = findViewById<EditText>(R.id.edtDiary)
+        btnImage = findViewById(R.id.btnImage)
         btnWrite = findViewById<Button>(R.id.btnWrite)
 
         var cal = Calendar.getInstance()
@@ -64,6 +70,13 @@ class AddStoryActivity : AppCompatActivity() {
             btnWrite.isEnabled = true
         }
 
+        btnImage.setOnClickListener {
+            val intent = Intent(Intent.ACTION_GET_CONTENT)
+            intent.type = "image/*"
+            intent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE,true)
+            startActivityForResult(Intent.createChooser(intent,"Load"),GALLARY)
+        }
+
         btnWrite.setOnClickListener {
             try{
                 // 동적으로 수정하기
@@ -83,6 +96,40 @@ class AddStoryActivity : AppCompatActivity() {
     }
 
 
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+
+        if(requestCode == GALLARY){
+            when(resultCode){
+                RESULT_OK -> {
+                    data?.let{
+                        val list = arrayListOf<Uri>()
+
+                        when{
+                            it.data != null -> list.add(it.data as Uri)
+                            it.clipData != null -> {
+                                val clip = it.clipData
+                                val size = clip?.itemCount
+
+                                for(i in 0 until size!!){
+                                    val item = clip.getItemAt(i).uri
+
+                                    list.add(item)
+                                }
+                            }
+                            else -> {}
+                        }
+                        if(it.data!= null)
+                            image1.setImageURI(list[0])
+                        else if (it.clipData != null){
+                            image1.setImageURI(list[0])
+                            image2.setImageURI(list[1])
+                        }
+                    }
+                }
+            }
+        }
+    }
 
     fun readDiary(fName: String) : String? {
         var diaryStr : String? = null
