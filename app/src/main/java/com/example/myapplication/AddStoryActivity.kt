@@ -11,6 +11,8 @@ import android.util.Log
 import android.view.View
 import android.widget.*
 import androidx.core.app.ActivityCompat
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import androidx.room.Room
 import com.example.myapplication.model.Converter
 import com.example.myapplication.model.Picture
@@ -25,26 +27,24 @@ class AddStoryActivity : AppCompatActivity() {
     lateinit var edtDiary : EditText
     lateinit var btnWrite : Button
     lateinit var fileName : String
-    lateinit var hash : String
-    lateinit var btnHash: Button
-    lateinit var filename1 : String
     lateinit var db : AppDatabase
-    lateinit var image1 : ImageView
-    lateinit var image2 : ImageView
     lateinit var btnImage : Button
+    lateinit var selectedImgRec : RecyclerView
+    lateinit var imageUri : ArrayList<Uri>
+    lateinit var imageCountTV : TextView
     val GALLARY = 111
+    lateinit var imageAdapter: SelectedImgAdapter
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_addstory)
         title = "게시글 작성하기"
 
-        image1 = findViewById<ImageView>(R.id.image1)
-        image2 = findViewById(R.id.image2)
 
         dp = findViewById<DatePicker>(R.id.datePicker1)
         edtDiary = findViewById<EditText>(R.id.edtDiary)
         btnImage = findViewById(R.id.btnImage)
         btnWrite = findViewById<Button>(R.id.btnWrite)
+        imageCountTV = findViewById(R.id.imageCount)
 
         var cal = Calendar.getInstance()
         var cYear = cal.get(Calendar.YEAR)
@@ -53,11 +53,6 @@ class AddStoryActivity : AppCompatActivity() {
 
         var intent = intent
         val mapId = intent.getIntExtra("Local", 0)
-
-        filename1 =Integer.toString(cYear)+"_"+Integer.toString(cMonth+1)+"_"+Integer.toString(cDay)+".txt"
-        var str1=readDiary(filename1)
-        edtDiary.setText(str1)
-        btnWrite.isEnabled = true
 
         callDB()
 
@@ -93,6 +88,14 @@ class AddStoryActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+
+        selectedImgRec = findViewById(R.id.selectedImgRec)
+        selectedImgRec.layoutManager = LinearLayoutManager(this,RecyclerView.HORIZONTAL,false)
+
+        imageUri = arrayListOf()
+        imageAdapter = SelectedImgAdapter(this,imageUri)
+        selectedImgRec.adapter = imageAdapter
+
     }
 
 
@@ -108,6 +111,12 @@ class AddStoryActivity : AppCompatActivity() {
                         when{
                             it.data != null -> list.add(it.data as Uri)
                             it.clipData != null -> {
+                                var itemSize = it.clipData!!.itemCount
+                                if(itemSize > 10){
+                                    Toast.makeText(applicationContext,"사진은 최대 10개 선택가능합니다!\n선택 개수 : $itemSize",Toast.LENGTH_SHORT).show()
+                                    return
+                                }
+
                                 val clip = it.clipData
                                 val size = clip?.itemCount
 
@@ -119,12 +128,15 @@ class AddStoryActivity : AppCompatActivity() {
                             }
                             else -> {}
                         }
-                        if(it.data!= null)
-                            image1.setImageURI(list[0])
-                        else if (it.clipData != null){
-                            image1.setImageURI(list[0])
-                            image2.setImageURI(list[1])
+                        // 선택한 사진을 뷰에 넣음
+                        imageUri = arrayListOf()
+                        for(i in list){
+                            imageUri.add(i)
                         }
+                        imageAdapter = SelectedImgAdapter(this,imageUri)
+                        selectedImgRec.adapter = imageAdapter
+
+                        imageCountTV.text = imageUri.size.toString() + "/10 이미지"
                     }
                 }
             }

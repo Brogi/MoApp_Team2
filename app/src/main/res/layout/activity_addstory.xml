@@ -21,56 +21,27 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/imagecount"
+            android:id="@+id/imageCount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
-            android:text="3/3 image"
+            android:text="0/10 이미지"
             android:textColor="@color/black"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <TableLayout
-            android:id="@+id/table"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/selectedImgRec"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:orientation="vertical"
+            android:layout_height="150dp"
+            android:orientation="horizontal"
+            android:layout_margin="20dp"
+            android:clipToPadding="false"
+            android:padding="5dp"
+            android:nestedScrollingEnabled="false"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/imagecount">
-
-            <TableRow>
-
-                <ImageView
-                    android:id="@+id/image1"
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
-                    android:layout_gravity="center"
-                    android:adjustViewBounds="true"
-                    android:background="@color/gray"
-                    android:src="@drawable/test" />
-
-                <ImageView
-                    android:id="@+id/image2"
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
-                    android:layout_gravity="center"
-                    android:adjustViewBounds="true"
-                    android:background="@color/gray"
-                    android:src="@drawable/test2" />
-
-                <ImageView
-                    android:id="@+id/image3"
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
-                    android:layout_gravity="center"
-                    android:adjustViewBounds="true"
-                    android:background="@color/gray"
-                    android:src="@drawable/test3" />
-            </TableRow>
-        </TableLayout>
+            app:layout_constraintTop_toBottomOf="@+id/imageCount"/>
 
         <Button
             android:id="@+id/btnImage"
@@ -83,14 +54,14 @@
             android:textSize="15sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/table" />
+            app:layout_constraintTop_toBottomOf="@id/selectedImgRec" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            app:layout_constraintEnd_toEndOf="@id/table"
-            app:layout_constraintStart_toStartOf="@id/table"
+            app:layout_constraintEnd_toEndOf="@id/selectedImgRec"
+            app:layout_constraintStart_toStartOf="@id/selectedImgRec"
             app:layout_constraintTop_toBottomOf="@id/btnImage">
 
             <DatePicker

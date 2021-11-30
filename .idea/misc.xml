@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Github/MoApp_Team2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.10462962962962963" />
+        <entry key="..\:/Github/MoApp_Team2/app/src/main/res/layout/selected_img_item.xml" value="0.18796296296296297" />
         <entry key="..\:/Jinho/MoApp/MoApp_Team2/app/src/main/res/drawable/background_button.xml" value="0.22083333333333333" />
         <entry key="..\:/Jinho/MoApp/MoApp_Team2/app/src/main/res/drawable/item_border.xml" value="0.22083333333333333" />
         <entry key="..\:/Jinho/MoApp/MoApp_Team2/app/src/main/res/drawable/linear_layout_border.xml" value="0.22083333333333333" />
