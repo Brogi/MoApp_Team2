@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.app.DatePickerDialog
 import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
@@ -10,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.room.Room
 import com.example.myapplication.model.Picture
 import com.example.myapplication.model.Story
+import org.w3c.dom.Text
 import java.io.FileInputStream
 import java.io.IOException
 import java.io.InputStream
@@ -26,6 +28,9 @@ class AddStoryActivity : AppCompatActivity() {
     lateinit var imageUri : ArrayList<Uri>
     lateinit var imageCountTV : TextView
     lateinit var hashEdt : EditText
+    lateinit var btnDate: Button
+    lateinit var txtDate: TextView
+
     val GALLARY = 111
     lateinit var imageAdapter: SelectedImgAdapter
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,33 +38,32 @@ class AddStoryActivity : AppCompatActivity() {
         setContentView(R.layout.activity_addstory)
         title = "게시글 작성하기"
 
-
-        dp = findViewById<DatePicker>(R.id.datePicker1)
         edtDiary = findViewById<EditText>(R.id.edtDiary)
         btnImage = findViewById(R.id.btnImage)
         btnWrite = findViewById<Button>(R.id.btnWrite)
         imageCountTV = findViewById(R.id.imageCount)
         hashEdt = findViewById(R.id.hash)
-
-        var cal = Calendar.getInstance()
-        var cYear = cal.get(Calendar.YEAR)
-        var cMonth = cal.get(Calendar.MONTH)
-        var cDay = cal.get(Calendar.DAY_OF_MONTH)
+        btnDate = findViewById(R.id.dateButton)
+        txtDate = findViewById(R.id.dateTextView)
 
         var intent = intent
         val mapId = intent.getIntExtra("Local", 0)
 
         callDB()
 
-        dp.init(cYear, cMonth, cDay) { view, year, monthOfYear, dayOfMonth ->
-            //EMPTY
-        }
-
         btnImage.setOnClickListener {
             val intent = Intent(Intent.ACTION_GET_CONTENT)
             intent.type = "image/*"
             intent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE,true)
             startActivityForResult(Intent.createChooser(intent,"Load"),GALLARY)
+        }
+
+        btnDate.setOnClickListener {
+            var cal = Calendar.getInstance()
+            val dateSetListener = DatePickerDialog.OnDateSetListener { view, year, month, dayOfMonth ->
+                txtDate.text = "${year}.${month+1}.${dayOfMonth}"
+            }
+            DatePickerDialog(this, dateSetListener, cal.get(Calendar.YEAR),cal.get(Calendar.MONTH),cal.get(Calendar.DAY_OF_MONTH)).show()
         }
 
         btnWrite.setOnClickListener {
