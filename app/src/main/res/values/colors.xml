@@ -13,10 +13,10 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="color1">#424549</color>
-    <color name="color2">#7e455e</color>
-    <color name="color3">#796e25</color>
-    <color name="color4">#59717c</color>
+    <color name="color1">#cfc3b5</color>
+    <color name="color2">#fc7399</color>
+    <color name="color3">#afcb3d</color>
+    <color name="color4">#a9a0fc</color>
     <color name="color5">#fccee2</color>
     <color name="color6">#beebfd</color>
     <color name="color7">#f7e7b1</color>
