@@ -28,18 +28,14 @@ class ImageActivity : AppCompatActivity() {
         callDB()
 
         var storyID = intent.getIntExtra("storyId", 0)
-        Toast.makeText(applicationContext, storyID.toString(), Toast.LENGTH_SHORT).show()
         var imageInfo = db.storyDao().getByStoryId(storyID)
-        Toast.makeText(applicationContext, "success0", Toast.LENGTH_SHORT).show()
         var imageList = db.pictureDao().getAllByStoryId(storyID)
 
-        Toast.makeText(applicationContext, "success1", Toast.LENGTH_SHORT).show()
         models = ArrayList<Model>()
         for (i in imageList.indices)
         {
             models!!.add(Model(imageList[i].image!!, imageInfo[0].date, imageInfo[0].hashTag!!))
         }
-        Toast.makeText(applicationContext, "success2", Toast.LENGTH_SHORT).show()
 
         adapter = Adapter(models!!, this)
 
