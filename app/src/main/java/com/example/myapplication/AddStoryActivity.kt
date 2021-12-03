@@ -39,7 +39,6 @@ class AddStoryActivity : AppCompatActivity() {
     lateinit var hashEdt : EditText
     val GALLARY = 111
     lateinit var imageAdapter: SelectedImgAdapter
-    lateinit var imgV : ImageView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_addstory)
@@ -52,7 +51,6 @@ class AddStoryActivity : AppCompatActivity() {
         btnWrite = findViewById<Button>(R.id.btnWrite)
         imageCountTV = findViewById(R.id.imageCount)
         hashEdt = findViewById(R.id.hash)
-        imgV = findViewById(R.id.imgV)
 
         var cal = Calendar.getInstance()
         var cYear = cal.get(Calendar.YEAR)

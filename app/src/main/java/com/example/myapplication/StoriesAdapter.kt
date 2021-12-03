@@ -10,6 +10,7 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 
 class StoriesAdapter(private val context : Context, private  val dataList : ArrayList<ThumbNailData>) : RecyclerView.Adapter<StoriesAdapter.ItemViewHolder>() {
 
@@ -28,7 +29,12 @@ class StoriesAdapter(private val context : Context, private  val dataList : Arra
 
         if (dataList.size == 0)
             return
-        holder.tnImage.setImageBitmap(dataList[position].tnImage)
+
+        Glide.with(context)
+            .load(dataList[position].tnImage)
+            .placeholder(R.drawable.ic_launcher_foreground)
+            .fallback(R.drawable.ic_launcher_foreground)
+            .into(holder.tnImage)
         holder.dateText.text = dataList[position].date
         holder.layout.setOnClickListener {
             // To be removed
