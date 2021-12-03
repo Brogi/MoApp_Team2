@@ -82,9 +82,7 @@ class AddStoryActivity : AppCompatActivity() {
                 db.storyDao().insertStory(Story(null,mapId,myDate,hashEdt.text.toString(),edtDiary.text.toString()))
                 val storycount = db.storyDao().getAllCount()
                 for (i in imageUri){
-                    val st: InputStream? = contentResolver.openInputStream(i)
-                    val bit = BitmapFactory.decodeStream(st)
-                    db.pictureDao().insertPicture(Picture(null,storycount, bit))
+                    db.pictureDao().insertPicture(Picture(null,storycount, i))
                 }
             }catch (e : Exception){
                 Toast.makeText(applicationContext,e.toString(),Toast.LENGTH_LONG).show()

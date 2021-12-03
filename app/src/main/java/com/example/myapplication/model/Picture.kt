@@ -1,6 +1,7 @@
 package com.example.myapplication.model
 
 import android.graphics.Bitmap
+import android.net.Uri
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
@@ -11,5 +12,5 @@ import kotlin.collections.ArrayList
 data class Picture(
     @PrimaryKey(autoGenerate = true) val imageId : Int?,
     val storyId : Int,
-    val image : Bitmap?
+    val image : Uri?
 )
