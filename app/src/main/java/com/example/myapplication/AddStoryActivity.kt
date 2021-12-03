@@ -22,6 +22,7 @@ import java.util.*
 class AddStoryActivity : AppCompatActivity() {
     lateinit var edtDiary: EditText
     lateinit var btnWrite: Button
+    lateinit var btnCancel: Button
     lateinit var db: AppDatabase
     lateinit var btnImage: Button
     lateinit var selectedImgRec: RecyclerView
@@ -31,7 +32,7 @@ class AddStoryActivity : AppCompatActivity() {
     lateinit var btnDate: Button
     lateinit var txtDate: TextView
 
-    val GALLARY = 111
+    private val GALLARY = 111
     lateinit var imageAdapter: SelectedImgAdapter
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,6 +42,7 @@ class AddStoryActivity : AppCompatActivity() {
         edtDiary = findViewById<EditText>(R.id.edtDiary)
         btnImage = findViewById(R.id.btnImage)
         btnWrite = findViewById<Button>(R.id.btnWrite)
+        btnCancel = findViewById(R.id.btnCancel)
         imageCountTV = findViewById(R.id.imageCount)
         hashEdt = findViewById(R.id.hash)
         btnDate = findViewById(R.id.dateButton)
@@ -79,9 +81,15 @@ class AddStoryActivity : AppCompatActivity() {
                 Toast.makeText(applicationContext, e.toString(), Toast.LENGTH_LONG).show()
             }
 
-
             var intent = Intent(applicationContext, StoriesActivity::class.java)
             intent.putExtra("Local", mapId)
+            startActivity(intent)
+            finish()
+        }
+
+        btnCancel.setOnClickListener {
+            val intent = Intent(applicationContext, StoriesActivity::class.java)
+            intent.putExtra("Local",mapId)
             startActivity(intent)
             finish()
         }
