@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.net.toUri
 import androidx.room.Room
 import androidx.viewpager.widget.ViewPager
 import com.example.myapplication.model.Story
@@ -34,7 +35,7 @@ class ImageActivity : AppCompatActivity() {
         models = ArrayList<Model>()
         for (i in imageList.indices)
         {
-            models!!.add(Model(imageList[i].image!!, imageInfo[0].date, imageInfo[0].hashTag!!))
+            models!!.add(Model(imageList[i].image!!.toUri(), imageInfo[0].date, imageInfo[0].hashTag!!))
         }
 
         adapter = Adapter(models!!, this)

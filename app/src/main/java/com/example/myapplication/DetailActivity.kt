@@ -25,7 +25,7 @@ class DetailActivity : AppCompatActivity() {
         mScaleGestureDetector = ScaleGestureDetector(this, ScaleListener())
 
         val imageView: ImageView = findViewById(R.id.imageView)
-        imageView.setImageBitmap(getIntent().getParcelableExtra("param"))
+        imageView.setImageURI(getIntent().getParcelableExtra("param"))
     }
 
     override fun onTouchEvent(event: MotionEvent?): Boolean {

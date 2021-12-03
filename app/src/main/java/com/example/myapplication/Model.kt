@@ -1,7 +1,7 @@
 package com.example.myapplication
 
-import android.graphics.Bitmap
+import android.net.Uri
 
-class Model(var image: Bitmap, var date: String, var hashtag: String) {
+class Model(var image: Uri, var date: String, var hashtag: String) {
 
 }

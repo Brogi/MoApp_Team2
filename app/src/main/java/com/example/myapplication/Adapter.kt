@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.viewpager.widget.PagerAdapter
+import com.bumptech.glide.Glide
 
 class Adapter(private val models: ArrayList<Model>, private val context: Context) : PagerAdapter() {
 
@@ -27,9 +28,15 @@ class Adapter(private val models: ArrayList<Model>, private val context: Context
         val date: TextView = view.findViewById(R.id.date)
         val hashtag: TextView = view.findViewById(R.id.hashtag)
 
-        imageView.setImageBitmap(models[position].image)
+        imageView.setImageURI(models[position].image)
         date.setText(models[position].date)
         hashtag.setText(models[position].hashtag)
+
+        Glide.with(context)
+            .load(models[position].image)
+            .placeholder(R.drawable.ic_launcher_foreground)
+            .fallback(R.drawable.ic_launcher_foreground)
+            .into(imageView)
 
         imageView.setOnClickListener {
             val intent = Intent(context, DetailActivity::class.java)
@@ -37,7 +44,7 @@ class Adapter(private val models: ArrayList<Model>, private val context: Context
             context.startActivity(intent)
             // finish();
         }
-        container.addView(view, 0)
+//        container.addView(view, 0)
         return view
     }
 
