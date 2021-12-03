@@ -9,6 +9,7 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
+import androidx.core.net.toUri
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 
@@ -31,7 +32,7 @@ class StoriesAdapter(private val context : Context, private  val dataList : Arra
             return
 
         Glide.with(context)
-            .load(dataList[position].tnImage)
+            .load(dataList[position].tnImage.toUri())
             .placeholder(R.drawable.ic_launcher_foreground)
             .fallback(R.drawable.ic_launcher_foreground)
             .into(holder.tnImage)

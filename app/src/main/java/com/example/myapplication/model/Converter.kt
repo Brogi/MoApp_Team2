@@ -2,6 +2,7 @@ package com.example.myapplication.model
 
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
+import android.net.Uri
 import androidx.room.TypeConverter
 import java.io.ByteArrayOutputStream
 

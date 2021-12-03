@@ -12,5 +12,5 @@ import kotlin.collections.ArrayList
 data class Picture(
     @PrimaryKey(autoGenerate = true) val imageId : Int?,
     val storyId : Int,
-    val image : Uri?
+    val image : String
 )

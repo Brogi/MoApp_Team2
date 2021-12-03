@@ -1,24 +1,13 @@
 package com.example.myapplication
 
-import android.content.Context
 import android.content.Intent
-import android.graphics.Bitmap
-import android.graphics.BitmapFactory
-import android.graphics.ImageDecoder
 import android.net.Uri
-import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.provider.MediaStore
-import android.util.Log
-import android.view.View
 import android.widget.*
-import androidx.core.app.ActivityCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.room.Room
-import com.bumptech.glide.Glide
-import com.example.myapplication.model.Converter
 import com.example.myapplication.model.Picture
 import com.example.myapplication.model.Story
 import java.io.FileInputStream
@@ -80,7 +69,7 @@ class AddStoryActivity : AppCompatActivity() {
                 db.storyDao().insertStory(Story(null,mapId,myDate,hashEdt.text.toString(),edtDiary.text.toString()))
                 val storycount = db.storyDao().getAllCount()
                 for (i in imageUri){
-                    db.pictureDao().insertPicture(Picture(null,storycount, i))
+                    db.pictureDao().insertPicture(Picture(null,storycount, i.toString()))
                 }
             }catch (e : Exception){
                 Toast.makeText(applicationContext,e.toString(),Toast.LENGTH_LONG).show()
