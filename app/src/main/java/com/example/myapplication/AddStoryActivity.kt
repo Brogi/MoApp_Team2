@@ -4,9 +4,12 @@ import android.content.Context
 import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
+import android.graphics.ImageDecoder
 import android.net.Uri
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.MediaStore
 import android.util.Log
 import android.view.View
 import android.widget.*
@@ -14,11 +17,13 @@ import androidx.core.app.ActivityCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.room.Room
+import com.bumptech.glide.Glide
 import com.example.myapplication.model.Converter
 import com.example.myapplication.model.Picture
 import com.example.myapplication.model.Story
 import java.io.FileInputStream
 import java.io.IOException
+import java.io.InputStream
 import java.lang.Exception
 import java.util.*
 
@@ -26,14 +31,15 @@ class AddStoryActivity : AppCompatActivity() {
     lateinit var dp : DatePicker
     lateinit var edtDiary : EditText
     lateinit var btnWrite : Button
-    lateinit var fileName : String
     lateinit var db : AppDatabase
     lateinit var btnImage : Button
     lateinit var selectedImgRec : RecyclerView
     lateinit var imageUri : ArrayList<Uri>
     lateinit var imageCountTV : TextView
+    lateinit var hashEdt : EditText
     val GALLARY = 111
     lateinit var imageAdapter: SelectedImgAdapter
+    lateinit var imgV : ImageView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_addstory)
@@ -45,6 +51,8 @@ class AddStoryActivity : AppCompatActivity() {
         btnImage = findViewById(R.id.btnImage)
         btnWrite = findViewById<Button>(R.id.btnWrite)
         imageCountTV = findViewById(R.id.imageCount)
+        hashEdt = findViewById(R.id.hash)
+        imgV = findViewById(R.id.imgV)
 
         var cal = Calendar.getInstance()
         var cYear = cal.get(Calendar.YEAR)
@@ -57,12 +65,7 @@ class AddStoryActivity : AppCompatActivity() {
         callDB()
 
         dp.init(cYear, cMonth, cDay) { view, year, monthOfYear, dayOfMonth ->
-            fileName = (Integer.toString(year) + "_"
-                    + Integer.toString(monthOfYear + 1) + "_"
-                    + Integer.toString(dayOfMonth) + ".txt")
-            var str = readDiary(fileName)
-            edtDiary.setText(str)
-            btnWrite.isEnabled = true
+            //EMPTY
         }
 
         btnImage.setOnClickListener {
@@ -74,10 +77,15 @@ class AddStoryActivity : AppCompatActivity() {
 
         btnWrite.setOnClickListener {
             try{
+                var myDate = dp.year.toString() + "." + (dp.month+1).toString() + "." + dp.dayOfMonth.toString()
                 // 동적으로 수정하기
-                db.storyDao().insertStory(Story(null,mapId,"1111.11.11","Hello world","JODDAEDDA!"))
+                db.storyDao().insertStory(Story(null,mapId,myDate,hashEdt.text.toString(),edtDiary.text.toString()))
                 val storycount = db.storyDao().getAllCount()
-                db.pictureDao().insertPicture(Picture(null,storycount, BitmapFactory.decodeFile("/storage/emulated/0/DCIM/airplane.png")))
+                for (i in imageUri){
+                    val st: InputStream? = contentResolver.openInputStream(i)
+                    val bit = BitmapFactory.decodeStream(st)
+                    db.pictureDao().insertPicture(Picture(null,storycount, bit))
+                }
             }catch (e : Exception){
                 Toast.makeText(applicationContext,e.toString(),Toast.LENGTH_LONG).show()
             }
