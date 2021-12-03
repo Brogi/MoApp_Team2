@@ -2,11 +2,13 @@ package com.example.myapplication
 
 import android.content.Context
 import android.content.Intent
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.core.net.toUri
 import androidx.viewpager.widget.PagerAdapter
 import com.bumptech.glide.Glide
 
@@ -28,15 +30,14 @@ class Adapter(private val models: ArrayList<Model>, private val context: Context
         val date: TextView = view.findViewById(R.id.date)
         val hashtag: TextView = view.findViewById(R.id.hashtag)
 
-        imageView.setImageURI(models[position].image)
+        Glide.with(context)
+            .load(models[position].image.toUri())
+            .placeholder(R.drawable.ic_launcher_foreground)
+            .fallback(R.drawable.ic_launcher_background)
+            .into(imageView)
+
         date.setText(models[position].date)
         hashtag.setText(models[position].hashtag)
-
-        Glide.with(context)
-            .load(models[position].image)
-            .placeholder(R.drawable.ic_launcher_foreground)
-            .fallback(R.drawable.ic_launcher_foreground)
-            .into(imageView)
 
         imageView.setOnClickListener {
             val intent = Intent(context, DetailActivity::class.java)
@@ -44,7 +45,7 @@ class Adapter(private val models: ArrayList<Model>, private val context: Context
             context.startActivity(intent)
             // finish();
         }
-//        container.addView(view, 0)
+        container.addView(view, 0)
         return view
     }
 
