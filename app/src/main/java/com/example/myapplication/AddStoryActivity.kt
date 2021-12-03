@@ -54,9 +54,10 @@ class AddStoryActivity : AppCompatActivity() {
         callDB()
 
         btnImage.setOnClickListener {
-            val intent = Intent(Intent.ACTION_GET_CONTENT)
-            intent.type = "image/*"
-            intent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true)
+            val intent = Intent(Intent.ACTION_GET_CONTENT).also {
+                it.type = "image/*"
+                it.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true)
+            }
             startActivityForResult(Intent.createChooser(intent, "Load"), GALLARY)
         }
 
@@ -112,9 +113,11 @@ class AddStoryActivity : AppCompatActivity() {
                 RESULT_OK -> {
                     data?.let {
                         val list = arrayListOf<Uri>()
-
                         when {
-                            it.data != null -> list.add(it.data as Uri)
+                            it.data != null -> {
+                                list.add(it.data as Uri)
+                            }
+
                             it.clipData != null -> {
                                 var itemSize = it.clipData!!.itemCount
                                 if (itemSize > 10) {

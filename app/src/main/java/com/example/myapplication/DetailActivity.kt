@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.graphics.BitmapFactory
 import android.os.Bundle
 import android.view.GestureDetector
 import android.view.MotionEvent
@@ -25,7 +26,7 @@ class DetailActivity : AppCompatActivity() {
         mScaleGestureDetector = ScaleGestureDetector(this, ScaleListener())
 
         val imageView: ImageView = findViewById(R.id.imageView)
-        imageView.setImageURI(getIntent().getParcelableExtra("param"))
+        imageView.setImageBitmap(BitmapFactory.decodeFile(getIntent().getStringExtra("param")))
     }
 
     override fun onTouchEvent(event: MotionEvent?): Boolean {

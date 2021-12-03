@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.core.net.toUri
 import androidx.viewpager.widget.PagerAdapter
 import com.bumptech.glide.Glide
@@ -30,8 +31,11 @@ class Adapter(private val models: ArrayList<Model>, private val context: Context
         val date: TextView = view.findViewById(R.id.date)
         val hashtag: TextView = view.findViewById(R.id.hashtag)
 
+        val uriPathHelper = URIPathHelper()
+        val filePath = uriPathHelper.getPath(context, models[position].image.toUri())
+
         Glide.with(context)
-            .load(models[position].image.toUri())
+            .load(filePath)
             .placeholder(R.drawable.ic_launcher_foreground)
             .fallback(R.drawable.ic_launcher_background)
             .into(imageView)
@@ -41,7 +45,7 @@ class Adapter(private val models: ArrayList<Model>, private val context: Context
 
         imageView.setOnClickListener {
             val intent = Intent(context, DetailActivity::class.java)
-            intent.putExtra("param", models[position].image)
+            intent.putExtra("param", filePath)
             context.startActivity(intent)
             // finish();
         }
@@ -52,4 +56,5 @@ class Adapter(private val models: ArrayList<Model>, private val context: Context
     override fun destroyItem(container: ViewGroup, position: Int, `object`: Any) {
         container.removeView(`object` as View?)
     }
+
 }

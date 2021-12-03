@@ -43,6 +43,7 @@ class StoriesAdapter(private val context : Context, private  val dataList : Arra
             var intent = Intent(context,ImageActivity::class.java)
             intent.putExtra("storyId",dataList[position].storyId)
             context.startActivity(intent)
+
         }
     }
 

@@ -2,6 +2,7 @@ package com.example.myapplication
 
 
 import android.animation.ArgbEvaluator
+import android.content.ContentUris
 import android.content.Context
 import android.graphics.BitmapFactory
 import android.os.Bundle
@@ -22,7 +23,7 @@ class ImageActivity : AppCompatActivity() {
     var models: ArrayList<Model>? = null
     var colors: Array<Int>? = null
     var argbEvaluator = ArgbEvaluator()
-    lateinit var content : TextView
+    lateinit var content: TextView
     lateinit var db: AppDatabase
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,8 +36,7 @@ class ImageActivity : AppCompatActivity() {
         var imageList = db.pictureDao().getAllByStoryId(storyID)
 
         models = ArrayList<Model>()
-        for (i in imageList.indices)
-        {
+        for (i in imageList.indices) {
             models!!.add(Model(imageList[i].image, imageInfo[0].date, imageInfo[0].hashTag!!))
         }
 
@@ -56,7 +56,11 @@ class ImageActivity : AppCompatActivity() {
         colors = colors_temp
 
         viewPager!!.setOnPageChangeListener(object : ViewPager.OnPageChangeListener {
-            override fun onPageScrolled(position: Int, positionOffset: Float, positionOffsetPixels: Int) {
+            override fun onPageScrolled(
+                position: Int,
+                positionOffset: Float,
+                positionOffsetPixels: Int
+            ) {
                 if (position < adapter!!.getCount() - 1 && position < colors!!.size - 1) {
                     viewPager!!.setBackgroundColor(
                         argbEvaluator.evaluate(
@@ -85,4 +89,5 @@ class ImageActivity : AppCompatActivity() {
             "mapDB"
         ).allowMainThreadQueries().build()
     }
+
 }
