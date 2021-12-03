@@ -52,7 +52,7 @@
             android:id="@+id/content"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#dddddd"
+            android:background="@color/lightGray"
             android:gravity="center"
             android:orientation="vertical">
 
@@ -62,7 +62,8 @@
                 android:layout_height="match_parent"
                 android:padding="24dp"
                 android:text="SlidingDrawer 입니다.\n"
-                android:textSize="32dp" />
+                android:textColor="@color/black"
+                android:textSize="24dp" />
         </LinearLayout>
     </SlidingDrawer>
 

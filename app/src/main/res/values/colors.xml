@@ -17,6 +17,12 @@
     <color name="color2">#7e455e</color>
     <color name="color3">#796e25</color>
     <color name="color4">#59717c</color>
+    <color name="color5">#fccee2</color>
+    <color name="color6">#beebfd</color>
+    <color name="color7">#f7e7b1</color>
+    <color name="color8">#afcb3d</color>
+    <color name="color9">#d3c0d3</color>
+    <color name="color10">#9ec5d5</color>
     <color name="orange">#f27f35</color>
     <color name="button_blue">#CAE5F8</color>
 </resources>

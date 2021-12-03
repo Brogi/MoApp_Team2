@@ -6,6 +6,7 @@ import android.content.ContentUris
 import android.content.Context
 import android.graphics.BitmapFactory
 import android.os.Bundle
+import android.util.Log
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -50,7 +51,13 @@ class ImageActivity : AppCompatActivity() {
             getResources().getColor(R.color.color1),
             getResources().getColor(R.color.color2),
             getResources().getColor(R.color.color3),
-            getResources().getColor(R.color.color4)
+            getResources().getColor(R.color.color4),
+            getResources().getColor(R.color.color5),
+            getResources().getColor(R.color.color6),
+            getResources().getColor(R.color.color7),
+            getResources().getColor(R.color.color8),
+            getResources().getColor(R.color.color9),
+            getResources().getColor(R.color.color10)
         )
 
         colors = colors_temp
@@ -61,7 +68,7 @@ class ImageActivity : AppCompatActivity() {
                 positionOffset: Float,
                 positionOffsetPixels: Int
             ) {
-                if (position < adapter!!.getCount() - 1 && position < colors!!.size - 1) {
+                if (position < adapter!!.getCount() && position < colors!!.size - 1) {
                     viewPager!!.setBackgroundColor(
                         argbEvaluator.evaluate(
                             positionOffset,
@@ -72,6 +79,7 @@ class ImageActivity : AppCompatActivity() {
                 } else {
                     viewPager!!.setBackgroundColor(colors!![colors!!.size - 1])
                 }
+
             }
 
             override fun onPageSelected(position: Int) {}
