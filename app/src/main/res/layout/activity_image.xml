@@ -61,6 +61,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:padding="24dp"
+                android:fontFamily="@font/wandohope_r"
                 android:text="SlidingDrawer 입니다.\n"
                 android:textColor="@color/black"
                 android:textSize="24dp" />
