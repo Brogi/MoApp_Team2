@@ -44,9 +44,9 @@
 
     <com.larswerkman.holocolorpicker.ColorPicker
         android:id="@+id/picker"
-        android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/topTextLayout" />
@@ -167,17 +167,19 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:orientation="vertical"
-        android:layout_height="wrap_content" >
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
         <Button
             android:id="@+id/changeBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
             android:layout_marginBottom="10dp"
+            android:layout_weight="1"
             android:background="@drawable/background_button"
             android:text="변경" />
 
@@ -185,7 +187,9 @@
             android:id="@+id/cancelBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
             android:layout_marginBottom="20dp"
+            android:layout_weight="1"
             android:background="@drawable/background_button"
             android:text="취소" />
 
