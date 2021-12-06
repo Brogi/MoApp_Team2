@@ -20,4 +20,6 @@ interface PictureDao {
     @Query("SELECT COUNT(*) FROM picture")
     fun getAllCount() : Int
 
+    @Query("DELETE FROM picture WHERE storyID = :id")
+    fun deleteByStoryId(id : Int)
 }

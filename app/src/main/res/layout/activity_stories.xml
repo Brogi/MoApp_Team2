@@ -90,4 +90,17 @@
         app:layout_constraintEnd_toEndOf="@id/as_FloatingBtn"
         app:layout_constraintStart_toStartOf="@id/as_FloatingBtn" />
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/as_DeleteStoryBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/ic_baseline_delete_forever_24"
+        android:tint="@color/black"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/as_ChangeColorBtn"
+        app:layout_constraintEnd_toEndOf="@id/as_FloatingBtn"
+        app:layout_constraintStart_toStartOf="@id/as_FloatingBtn" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

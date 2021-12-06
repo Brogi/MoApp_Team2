@@ -20,4 +20,10 @@ interface StoryDao {
 
     @Query("SELECT * FROM story WHERE storyId = :id")
     fun getByStoryId(id : Int): List<Story>
+
+    @Query("DELETE FROM story WHERE storyID = :id")
+    fun deleteByStoryId(id : Int)
+
+    @Query("SELECT MAX(storyID) FROM story")
+    fun getMaxStoryID() : Int
 }

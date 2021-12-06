@@ -74,7 +74,7 @@ class AddStoryActivity : AppCompatActivity() {
                 var myDate = txtDate.text.toString()
                 // 동적으로 수정하기
                 db.storyDao().insertStory(Story(null, mapId, myDate, hashEdt.text.toString(), edtDiary.text.toString()))
-                val storycount = db.storyDao().getAllCount()
+                val storycount = db.storyDao().getMaxStoryID()
                 for (i in imageUri) {
                     db.pictureDao().insertPicture(Picture(null, storycount, i.toString()))
                 }
