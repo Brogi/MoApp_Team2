@@ -1,2 +1,2 @@
 # MoApp_Team2
-nice~
+최종발표 ppt 참고 바랍니다
